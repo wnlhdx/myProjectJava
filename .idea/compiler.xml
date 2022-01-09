@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="j2ee" />
+        <module name="javase" />
+        <module name="ssm" />
+        <module name="springboot" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="j2ee" target="1.5" />
+      <module name="javase" target="17" />
+      <module name="springboot" target="1.5" />
+      <module name="ssm" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
