@@ -10,37 +10,22 @@ import java.util.logging.Logger;
 
 
 import com.myproject.javastudy.thread.WindowUnsafe;
-import junit.framework.Assert;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+
+import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+
 
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase {
+public class AppTest  {
     private final Logger logger = Logger.getLogger("test.Test");
-
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest(String testName) {
-        super(testName);
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite() {
-        return new TestSuite(AppTest.class);
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() {
+    @Test
+    @Execution(CONCURRENT)
+    @RepeatedTest(3)
+    public void testApp() throws InterruptedException {
    /*     try {
             new Thread(new RunnableTest()).start();
             new Threadtest().start();
@@ -52,8 +37,10 @@ public class AppTest extends TestCase {
             //TODO: handle exception
         }
 */
-        logger.log(Level.INFO, () -> "test" + 3);
-        Thread window1 = new Thread(new WindowUnsafe());
+        WindowUnsafe testWindow1=new WindowUnsafe();
+        Thread window1 = new Thread(testWindow1);
+        window1.start();
+/*      Thread window1 = new Thread(new WindowUnsafe());
         Thread window2 = new Thread(new WindowUnsafe());
         Thread window3 = new Thread(new WindowUnsafe());
         window1.setName("window1");
@@ -62,6 +49,6 @@ public class AppTest extends TestCase {
         window1.start();
         window2.start();
         window3.start();
-        assertTrue(true);
+        assertTrue(true);*/
     }
 }
