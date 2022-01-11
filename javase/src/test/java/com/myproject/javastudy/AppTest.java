@@ -1,15 +1,12 @@
 package com.myproject.javastudy;
 
-import com.myproject.javastudy.thread.CallableTest;
-import com.myproject.javastudy.thread.RunnableTest;
-import com.myproject.javastudy.thread.Threadtest;
+import com.myproject.javastudy.thread.ProducterConsumer;
 
 import java.util.concurrent.FutureTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-import com.myproject.javastudy.thread.WindowUnsafe;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
@@ -23,8 +20,8 @@ import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 public class AppTest  {
     private final Logger logger = Logger.getLogger("test.Test");
     @Test
-    @Execution(CONCURRENT)
-    @RepeatedTest(3)
+/*    @Execution(CONCURRENT)
+    @RepeatedTest(3)*/
     public void testApp() throws InterruptedException {
    /*     try {
             new Thread(new RunnableTest()).start();
@@ -36,13 +33,17 @@ public class AppTest  {
             e.printStackTrace();
             //TODO: handle exception
         }
-*/
-        WindowUnsafe testWindow1=new WindowUnsafe();
-        Thread window1 = new Thread(testWindow1);
+
+        ThreadCommunicate testWindow=new ThreadCommunicate();
+        Thread window1 = new Thread(testWindow);
+        Thread window2 = new Thread(testWindow);
         window1.start();
-/*      Thread window1 = new Thread(new WindowUnsafe());
-        Thread window2 = new Thread(new WindowUnsafe());
-        Thread window3 = new Thread(new WindowUnsafe());
+        window2.start();
+        Thread.sleep(5000);
+      WindowUnsafe  windows=new WindowUnsafe();
+        Thread window1 = new Thread(windows);
+        Thread window2 = new Thread(windows);
+        Thread window3 = new Thread(windows);
         window1.setName("window1");
         window2.setName("window2");
         window3.setName("window3");
@@ -50,5 +51,7 @@ public class AppTest  {
         window2.start();
         window3.start();
         assertTrue(true);*/
+        new ProducterConsumer().start();
+        Thread.sleep(10000);
     }
 }
