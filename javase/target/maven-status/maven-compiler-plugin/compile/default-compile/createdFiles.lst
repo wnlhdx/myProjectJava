@@ -1,4 +1,10 @@
+com\myproject\javastudy\stringanddate\StringAndDateTest.class
 com\myproject\javastudy\thread\CallableTest.class
+com\myproject\javastudy\thread\ThreadCommunicate.class
 com\myproject\javastudy\thread\Threadtest.class
-com\myproject\javastudy\App.class
+com\myproject\javastudy\thread\ProducterConsumer$Consumer.class
+com\myproject\javastudy\Main.class
+com\myproject\javastudy\thread\ProducterConsumer$Producter.class
+com\myproject\javastudy\thread\WindowUnsafe.class
+com\myproject\javastudy\thread\ProducterConsumer.class
 com\myproject\javastudy\thread\RunnableTest.class

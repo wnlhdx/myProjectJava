@@ -72,10 +72,14 @@ public class ProducterConsumer {
     }
 
     public void start() {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2, 2, 1, TimeUnit.MINUTES,
+/*        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2, 2, 1, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(2), Executors.defaultThreadFactory(), new ThreadPoolExecutor.AbortPolicy());
         threadPoolExecutor.execute(new Producter());
-        threadPoolExecutor.execute(new Consumer());
+        threadPoolExecutor.execute(new Consumer());*/
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        executorService.execute(new Producter());
+        executorService.execute(new Consumer());
+        executorService.shutdown();
     }
 }
 
