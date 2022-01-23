@@ -22,6 +22,12 @@
       <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver</artifactId>
+      <version>RELEASE</version>
+    </dependency>
+
   </dependencies>
 
   <build>

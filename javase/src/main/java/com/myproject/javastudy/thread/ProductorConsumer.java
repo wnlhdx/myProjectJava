@@ -9,31 +9,33 @@ import java.util.logging.Logger;
 /**
  * @author lkxl
  */
-public class ProducterConsumer {
-    private static int product = 0;
+public class ProductorConsumer {
+    private int product = 0;
     private final ReentrantLock reentrantLock = new ReentrantLock();
     private final Condition condition = reentrantLock.newCondition();
     private final Logger logger = Logger.getLogger("test.Test");
+    private int times =0;
+    private static final int TIMES_LIMIT =1000;
 
-    public class Producter implements Runnable {
+    public class Productor implements Runnable {
         @Override
         public void run() {
-            while (true) {
+            while (times<=TIMES_LIMIT) {
                 reentrantLock.lock();
                 try {
                     if (product < 20) {
-
+                        times+=1;
                         product++;
                         condition.signalAll();
                         logger.log(Level.INFO, () -> Thread.currentThread().getName() + "thread,product" + product);
                         //notify();
-
                     } else {
                         try {
                             condition.await();
                             //wait();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
+                            Thread.currentThread().interrupt();
                         }
                     }
                 } finally {
@@ -46,11 +48,11 @@ public class ProducterConsumer {
     public class Consumer implements Runnable {
         @Override
         public void run() {
-            while (true) {
+            while (times<=TIMES_LIMIT) {
                 reentrantLock.lock();
                 try {
                 if (product > 0) {
-
+                        times+=1;
                         product--;
                         logger.log(Level.INFO, () -> Thread.currentThread().getName() + "thread,product" + product);
                         condition.signalAll();
@@ -62,6 +64,7 @@ public class ProducterConsumer {
                         //wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+                        Thread.currentThread().interrupt();
                     }
                 }
                 } finally {
@@ -77,7 +80,7 @@ public class ProducterConsumer {
         threadPoolExecutor.execute(new Producter());
         threadPoolExecutor.execute(new Consumer());*/
         ExecutorService executorService = Executors.newFixedThreadPool(10);
-        executorService.execute(new Producter());
+        executorService.execute(new Productor());
         executorService.execute(new Consumer());
         executorService.shutdown();
     }

@@ -10,8 +10,8 @@ import java.util.logging.Logger;
  */
 public class WindowUnsafe implements Runnable {
     private final Logger logger = Logger.getLogger("test.Test");
-    private static int ticket = 100;
-    private Lock reentrantLock = new ReentrantLock(true);
+    private  int ticket = 100;
+    private final Lock reentrantLock = new ReentrantLock(true);
 
     @Override
     public void run() {

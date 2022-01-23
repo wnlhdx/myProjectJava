@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class CallableTest implements Callable<String> {
     private final Logger logger= Logger.getLogger("test.Test");
   @Override
-  public String call() throws Exception {
+  public String call(){
       logger.log(Level.INFO,"hello callable");
       return ("hello return");
   }
