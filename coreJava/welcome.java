@@ -1,4 +1,4 @@
-public class welcome{
+ gitpublic class welcome{
   public static void main(String[] args){
       String greeting = "welcome to Core java";
       System.out.println(greeting);
