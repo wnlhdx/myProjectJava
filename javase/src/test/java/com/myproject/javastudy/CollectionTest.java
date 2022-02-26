@@ -6,10 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Logger;
 
 /**
@@ -37,6 +35,20 @@ class CollectionTest {
         logger.info(Arrays.toString(theCollection.toArray()));
         List<Integer> test= List.of(1,2,3,4,5);
         assertEquals(1,test.size());
+        Iterator<Object> iterator=collection.iterator();
+        while(iterator.hasNext()){
+            iterator.next();
+        }
+        //线程安全的Object数组
+        Vector<String> vector = new Vector<>();
+        //线程不安全的Object数组
+        ArrayList<String> arrayList = new ArrayList<>();
+        //线程安全的双向链表.频繁的插入和删除
+        LinkedList<String> linkedList = new LinkedList<>();
+        List<String> synchronizedarray=Collections.synchronizedList(arrayList);
+        //多读少写线程安全
+        CopyOnWriteArrayList<String> copyOnWriteArrayList=new CopyOnWriteArrayList<>();
+
     }
 
 }

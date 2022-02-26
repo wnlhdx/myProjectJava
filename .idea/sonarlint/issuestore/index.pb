@@ -7,7 +7,9 @@ B
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 <
 j2ee/pom.xml,1\7\1772a2e82cacb4a9e233b0d167c3e43c0ca229e6
-f
-6javase/src/main/java/com/myproject/javastudy/Main.java,8\a\8a2775abe8a52c251d8bc62b976e85d59f1688fd
-z
-Jjavase/src/main/java/com/myproject/javastudy/stringanddate/TestSystem.java,3\f\3f88994be1b7f527962aa551e58d3a73cabe8862
+u
+Ejavase/src/main/java/com/myproject/javastudy/enums/MyAnnotations.java,9\7\97197c3ec18e0330ce1987249e241dd034ff0ed4
+t
+Djavase/src/main/java/com/myproject/javastudy/enums/MyAnnotation.java,d\a\da27ff60d4cf8d29b886fde4369a1dde19364c2c
+r
+Bjavase/src/main/java/com/myproject/javastudy/enums/SeasonEnum.java,3\e\3ea6a2da0d9b28d68c49707ac4f41763b02897d9
