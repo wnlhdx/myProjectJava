@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Permissions: sandbox
-Main-class: RoadApplet
-Created-By: 1.8.0_31 (Oracle Corporation)
-
-
-
