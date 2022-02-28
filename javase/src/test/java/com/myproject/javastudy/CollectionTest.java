@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 class CollectionTest {
     private final Logger logger = Logger.getLogger("test.Test");
     @Test
-    void testCollection(){
+    void testList(){
         MyCollection myCollection = new MyCollection();
         myCollection.setCollection(new ArrayList<>());
         Collection<Object> theCollection = myCollection.getCollection();
@@ -48,6 +48,13 @@ class CollectionTest {
         List<String> synchronizedarray=Collections.synchronizedList(arrayList);
         //多读少写线程安全
         CopyOnWriteArrayList<String> copyOnWriteArrayList=new CopyOnWriteArrayList<>();
+
+    }
+
+    @Test
+    void TestSet(){
+        Set<String> set=new LinkedHashSet<>();
+        set.add("1");
 
     }
 
