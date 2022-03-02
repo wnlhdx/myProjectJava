@@ -11,8 +11,6 @@ u
 Ejavase/src/main/java/com/myproject/javastudy/enums/MyAnnotations.java,9\7\97197c3ec18e0330ce1987249e241dd034ff0ed4
 t
 Djavase/src/main/java/com/myproject/javastudy/enums/MyAnnotation.java,d\a\da27ff60d4cf8d29b886fde4369a1dde19364c2c
-r
-Bjavase/src/main/java/com/myproject/javastudy/enums/SeasonEnum.java,3\e\3ea6a2da0d9b28d68c49707ac4f41763b02897d9
 €
 Pjavase/src/main/java/com/myproject/javastudy/stringanddate/ComparableThings.java,4\0\401b44accb1692db69cd27fbd415385b01def06e
 
@@ -23,8 +21,6 @@ Jjavase/src/main/java/com/myproject/javastudy/stringanddate/TestSystem.java,3\f
 javase/pom.xml,e\2\e28d68c1fc120b5c6f7230b15b0a04b3b5a340fa
 q
 Ajavase/src/main/java/com/myproject/javastudy/enums/TestClass.java,e\4\e42096215c3ffdbca7f3056798314a07ed6cf815
-n
->javase/src/main/java/com/myproject/javastudy/enums/Season.java,5\c\5c1df94461e94677879b23dae0aee3c08516b8d1
 l
 <javase/src/test/java/com/myproject/javastudy/ThreadTest.java,a\3\a36e249fc7286bf04e57ca3f9c3264ed1a43c456
 u
@@ -35,3 +31,13 @@ u
 Ejavase/src/main/java/com/myproject/javastudy/thread/RunnableTest.java,d\c\dc04c539655cd068b1c142d145131e63beb1c175
 z
 Jjavase/src/main/java/com/myproject/javastudy/thread/ThreadCommunicate.java,4\1\4104b32fb2aa6f3afc4a26241267475206f887ed
+s
+Cjavase/src/main/java/com/myproject/javastudy/thread/Threadtest.java,3\9\39efa4cdd66df14ff2b1af887e41f27195450076
+u
+Ejavase/src/main/java/com/myproject/javastudy/thread/WindowUnsafe.java,5\e\5e69ada82ebf1f9241e9d5449611137f55f84c60
+j
+:javase/src/test/java/com/myproject/javastudy/EnumTest.java,f\0\f0461af78a063f0e356cb641f20a6ea65efcc427
+h
+8javase/src/test/java/com/myproject/javastudy/SDTest.java,c\c\cc5c89f4ac2d8739a9bcdada4e531e724c6fd3fb
+z
+Jjavase/src/main/java/com/myproject/javastudy/collections/MyCollection.java,7\0\70602196ba97d75cf00a28bd7d23b1637b053ef0
