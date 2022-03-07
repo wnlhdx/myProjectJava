@@ -8,8 +8,8 @@ public class TestReflectionCon {
     public String testReflectionCon(){
         return str;
     }
-    public String setStr(String str){
-        return this.str = str;
+    public void setStr(String str){
+        this.str = str;
     }
     public TestReflectionCon(){
         super();

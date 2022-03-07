@@ -11,7 +11,7 @@ public class MyReflection {
     public String getStr(){
         return str;
     }
-    public String setStr(String str){
-        return this.str = str;
+    public void setStr(String str){
+        this.str = str;
     }
 }

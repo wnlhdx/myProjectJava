@@ -4,6 +4,7 @@ import com.myproject.javastudy.collections.MyCollection;
 import static  org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import com.myproject.javastudy.collections.TestCompare;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
@@ -55,7 +56,22 @@ class CollectionTest {
     void TestSet(){
         Set<String> set=new LinkedHashSet<>();
         set.add("1");
-
+        TreeSet<TestCompare> treeSet = new TreeSet<>();
+        treeSet.add(new TestCompare("abc"));
+        treeSet.add(new TestCompare("aaa"));
+        treeSet.add(new TestCompare("caa"));
+        assertEquals("aaa", treeSet.first().getTestString());
+        Comparator<TestCompare> comparator=new Comparator<TestCompare>() {
+            @Override
+            public int compare(TestCompare o1, TestCompare o2) {
+                return o1.getTestString().compareTo(o2.getTestString());
+            }
+        };
+        TreeSet<TestCompare> treeSet1 = new TreeSet<>(comparator);
+        treeSet1.add(new TestCompare("abc"));
+        treeSet1.add(new TestCompare("aaa"));
+        treeSet1.add(new TestCompare("caa"));
+        assertEquals("aaa", treeSet1.first().getTestString());
     }
 
 }
