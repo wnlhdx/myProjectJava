@@ -17,8 +17,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
  class DataTypeTest {
     private final Logger logger = Logger.getLogger("test.Test");
-    private final String path="./src/test/java/com/myproject/javastudy/coreJavaTest/test.txt";
-    @Test
+    private final String path="./src/test/resources/test.properties";
+/*    @Test
     void TestInputFile() throws IOException {
         Scanner in=new Scanner(Paths.get(path), StandardCharsets.UTF_8);
         PrintWriter out=new PrintWriter(path,StandardCharsets.UTF_8);
@@ -29,7 +29,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
         assertTrue(in.nextLine().contains("Test"));
 
 
-    }
+    }*/
 
 
 

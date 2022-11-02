@@ -7,6 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import com.myproject.javastudy.collections.TestCompare;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Logger;
@@ -72,6 +76,25 @@ class CollectionTest {
         treeSet1.add(new TestCompare("aaa"));
         treeSet1.add(new TestCompare("caa"));
         assertEquals("aaa", treeSet1.first().getTestString());
+    }
+
+    @Test
+    void TestMap() throws IOException {
+        HashMap hashMap=new HashMap();
+        LinkedHashMap linkedHashMap=new LinkedHashMap();
+        TreeMap treeMap=new TreeMap();
+        Hashtable hashtable=new Hashtable();
+        Properties properties=new Properties();
+        System.out.println(new File(".").getAbsolutePath());
+        FileInputStream fileInputStream=new FileInputStream("src/test/resources/junit-platform.yaml");
+        properties.load(fileInputStream);
+        properties.list(System.out);
+    }
+
+    @Test
+    void TestCollections() {
+        Collections.synchronizedCollection(new ArrayList<>());
+        Enum enum1=Enum.valueOf(Enum.class,"A");
     }
 
 }

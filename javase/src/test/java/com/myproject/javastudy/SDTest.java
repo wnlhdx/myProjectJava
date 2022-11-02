@@ -16,7 +16,7 @@ class SDTest {
     private final Logger logger = Logger.getLogger("test.Test");
     private final  StringAndDateTest test=new StringAndDateTest();
 
-  /*  @Test
+   /* @Test
     void makeSDTest() throws MyExceptions, ParseException {
        //test.testDate();
        //test.testString();

@@ -12,6 +12,7 @@ public class RunnableTest implements Runnable{
     private final Logger logger= Logger.getLogger("test.Test");
   @Override
   public void run() {
-      logger.log(Level.INFO,"hello runnable");
+      logger.log(Level.INFO,
+              Thread.currentThread().getName()+"hello runnable");
   }
 }

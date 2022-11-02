@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="j2ee" />
+        <module name="JavaFx" />
         <module name="javase" />
         <module name="ssm" />
         <module name="springboot" />
@@ -14,9 +15,20 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
       <module name="j2ee" target="1.5" />
+      <module name="JavaFx" target="17" />
       <module name="javase" target="17" />
       <module name="springboot" target="1.5" />
       <module name="ssm" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-Dfile.encoding=UTF-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JavaFx" options="" />
+      <module name="j2ee" options="" />
+      <module name="javase" options="" />
+      <module name="springboot" options="" />
+      <module name="ssm" options="" />
+    </option>
   </component>
 </project>

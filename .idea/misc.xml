@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/j2ee/pom.xml" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFx/pom.xml" />
       </list>
     </option>
   </component>

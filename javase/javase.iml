@@ -12,12 +12,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.9.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.12.10" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:bson:3.12.10" level="project" />
-    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.12.10" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.12.11" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:3.12.11" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.12.11" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.15.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.15" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.17.graal" level="project" />
   </component>
 </module>

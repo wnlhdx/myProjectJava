@@ -12,6 +12,6 @@ public class Threadtest extends Thread
 { private final Logger logger= Logger.getLogger("test.Test");
   @Override
   public void run() {
-      logger.log(Level.INFO,"hello thread");
+      logger.log(Level.INFO,this.getName()+"hello thread");
   }
 }
