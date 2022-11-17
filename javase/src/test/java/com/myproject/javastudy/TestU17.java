@@ -22,12 +22,15 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author lkxl
  */
 
 public class TestU17 {
+    static ExecutorService ThreadPool= Executors.newFixedThreadPool(100);
     String url="https://www.u17.com/comic/";
     @Test
     public String searchByURL(List<Integer> idList) throws IOException {

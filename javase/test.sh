@@ -1,0 +1,1 @@
+mvn -Dtest=ThreadTest#*TestProcess test

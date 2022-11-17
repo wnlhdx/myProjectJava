@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  */
 public class ProductorConsumer {
     private int product = 0;
-    private final ReentrantLock reentrantLock = new ReentrantLock();
+    private final ReentrantLock reentrantLock = new ReentrantLock(true);
     private final Condition condition = reentrantLock.newCondition();
     private final Logger logger = Logger.getLogger("test.Test");
     private int times =0;
