@@ -11,6 +11,10 @@
         <option value="$PROJECT_DIR$/j2ee/pom.xml" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/backend/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/backend/Alarm/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud/backend/Eureka/pom.xml" />
         <option value="$PROJECT_DIR$/JavaFx/pom.xml" />
       </list>
     </option>

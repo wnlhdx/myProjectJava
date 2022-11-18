@@ -1,0 +1,11 @@
+target
+.settings
+.classpath
+.project
+src/main/resources/static/project/node_modules
+src/main/resources/static/project/dist
+src/main/resources/static/project/README.md
+src/main/resources/static/project/.gitignore
+src/main/resources/static/index.html
+src/main/resources/static/favicon.ico
+src/main/resources/static/assets

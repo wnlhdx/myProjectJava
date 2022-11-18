@@ -1,0 +1,1 @@
+xcopy  /Y .\project\dist\*  .

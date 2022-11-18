@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaFx/JavaFX.iml" filepath="$PROJECT_DIR$/JavaFx/JavaFX.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaFx/JavaFx.iml" filepath="$PROJECT_DIR$/JavaFx/JavaFx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud/backend/Alarm/Alarm.iml" filepath="$PROJECT_DIR$/springcloud/backend/Alarm/Alarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud/backend/Eureka/Eureka.iml" filepath="$PROJECT_DIR$/springcloud/backend/Eureka/Eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud/backend/backend.iml" filepath="$PROJECT_DIR$/springcloud/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/j2ee/j2ee.iml" filepath="$PROJECT_DIR$/j2ee/j2ee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFx/javaFx.iml" filepath="$PROJECT_DIR$/JavaFx/javaFx.iml" />
       <module fileurl="file://$PROJECT_DIR$/javase/javase.iml" filepath="$PROJECT_DIR$/javase/javase.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myProjectJava.iml" filepath="$PROJECT_DIR$/.idea/myProjectJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud/springcloud.iml" filepath="$PROJECT_DIR$/springcloud/springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm/ssm.iml" filepath="$PROJECT_DIR$/ssm/ssm.iml" />
     </modules>
   </component>

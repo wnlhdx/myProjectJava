@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/JavaFx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springboot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springcloud" vcs="Git" />
   </component>
 </project>
