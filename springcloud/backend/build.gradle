@@ -1,0 +1,45 @@
+group 'com.myproject'
+version '0.1.1'
+
+buildscript {
+    ext {
+        // 定义变量
+        springBootVersion = '+'
+        springCloudVersion = '+'
+        springCloudAlibabaVersion='+'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    sourceCompatibility = 17
+    targetCompatibility = 17
+
+    dependencyManagement {
+        imports {
+            // 解决cloud零散jar的版本问题
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAlibabaVersion}"
+        }
+    }
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation('org.springframework.boot:spring-boot-starter')
+        implementation('org.springframework.boot:spring-boot-starter-web')
+        implementation('org.springframework.boot:spring-boot-starter-test')
+    }
+}

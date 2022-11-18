@@ -6,12 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud" />
-        <module name="Alarm" />
         <module name="j2ee" />
         <module name="javase" />
         <module name="javaFx" />
-        <module name="Eureka" />
         <module name="springboot" />
       </profile>
     </annotationProcessing>
@@ -19,12 +16,8 @@
       <module name="Alarm" target="17" />
       <module name="backend" target="17" />
       <module name="Eureka" target="17" />
-      <module name="j2ee" target="1.5" />
       <module name="JavaFx" target="17" />
       <module name="JavaFX" target="17" />
-      <module name="javaFx" target="17" />
-      <module name="javase" target="17" />
-      <module name="springboot" target="17" />
       <module name="springcloud" target="17" />
       <module name="ssm" target="1.5" />
     </bytecodeTargetLevel>
