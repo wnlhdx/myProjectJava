@@ -4,16 +4,46 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/springcloud" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Nacos" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Sentinel" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend/Nacos" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
@@ -24,22 +54,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend/Sentinel" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend/Sentinel" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend/dubbo" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/springcloud/backend/dubbo" />
           </set>
         </option>
       </GradleProjectSettings>

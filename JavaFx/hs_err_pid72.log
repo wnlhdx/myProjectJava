@@ -16,7 +16,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -Dclassworlds.conf=/usr/share/maven/bin/m2.conf -Dmaven.home=/usr/share/maven -Dlibrary.jansi.path=/usr/share/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/mnt/d/work/code/vscode/java/myProjectJava/JavaFx org.codehaus.plexus.classworlds.launcher.Launcher exec:java -Dexec.mainClass=com.example.demo.HelloApplication
+Command Line: -Dclassworlds.conf=/usr/share/maven/bin/m2.conf -Dmaven.home=/usr/share/maven -Dlibrary.jansi.path=/usr/share/maven/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/mnt/d/work/code/vscode/java/myProjectJava/JavaFx org.codehaus.plexus.classworlds.launcher.Launcher exec:java -Dexec.mainClass=javafx.com.myproject.javase.HelloApplication
 
 Host: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, 12 cores, 7G, Ubuntu 22.04.1 LTS
 Time: Thu Nov 17 10:16:54 2022 CST elapsed time: 274.564175 seconds (0d 0h 4m 34s)

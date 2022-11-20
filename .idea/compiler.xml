@@ -14,11 +14,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
       <module name="Alarm" target="17" />
-      <module name="backend" target="17" />
       <module name="Eureka" target="17" />
       <module name="JavaFx" target="17" />
       <module name="JavaFX" target="17" />
-      <module name="springcloud" target="17" />
       <module name="ssm" target="1.5" />
     </bytecodeTargetLevel>
   </component>

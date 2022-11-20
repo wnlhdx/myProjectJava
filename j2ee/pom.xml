@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.myproject.j2ee</groupId>
+  <groupId>com.myproject</groupId>
   <artifactId>j2ee</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>j2ee Maven Webapp</name>
+  <name>j2ee</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -17,5 +17,12 @@
   </dependencies>
   <build>
     <finalName>j2ee</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>versions-maven-plugin</artifactId>
+        <version>2.12.0</version>
+      </plugin>
+    </plugins>
   </build>
 </project>
