@@ -6,6 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousServerSocketChannel;
 import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
+import java.nio.charset.Charset;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
@@ -14,38 +15,32 @@ import java.util.concurrent.TimeoutException;
  * @author lkxl
  */
 public class AIOServer  implements Runnable {
-    static int PORT=9999;
     @Override
     public void run() {
         AsynchronousServerSocketChannel server = null;
         try {
-            server = AsynchronousServerSocketChannel.open().bind(new InetSocketAddress(PORT));
+            server = AsynchronousServerSocketChannel.open().bind(new InetSocketAddress(9999));
             // 注册事件和事件完成后的处理器
             AsynchronousServerSocketChannel finalServer = server;
             server.accept(null, new CompletionHandler<AsynchronousSocketChannel, Object>() {
-                final ByteBuffer buffer = ByteBuffer.allocate(1024);
+                final ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                 public void completed(AsynchronousSocketChannel result, Object attachment) {
-                    System.out.println(Thread.currentThread().getName());
-                    System.out.println("start");
+                    System.out.println("thread:"+Thread.currentThread().getName());
                     try {
-                        buffer.clear();
-                        result.read(buffer).get(100, TimeUnit.SECONDS);
-                        buffer.flip();
-                        System.out.println("received message: " + new String(buffer.array()));
-                    } catch (InterruptedException | ExecutionException e) {
-                        System.out.println(e.toString());
-                    } catch (TimeoutException e) {
+                        byteBuffer.clear();
+                        result.read(byteBuffer).get(100, TimeUnit.SECONDS);
+                        byteBuffer.flip();
+                        String res= Charset.defaultCharset().newDecoder().decode(byteBuffer).toString();
+                        System.out.println("received message: " + res);
+                    } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
-
                         try {
-                            result.close();
                             finalServer.accept(null, this);
                         } catch (Exception e) {
-                            System.out.println(e.toString());
+                            e.printStackTrace();
                         }
                     }
-                    System.out.println("end");
                 }
 
                 @Override
@@ -55,8 +50,8 @@ public class AIOServer  implements Runnable {
             });
             // 主线程继续自己的行为
             while (true) {
-                System.out.println("server main thread");
-                Thread.sleep(1000);
+                System.out.println("thread:"+Thread.currentThread().getName());
+                Thread.sleep(2000);
             }
         } catch (Exception e) {
            e.printStackTrace();

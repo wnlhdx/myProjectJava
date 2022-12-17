@@ -1,5 +1,9 @@
 rootProject.name = 'backend'
 include 'Nacos'
 include 'Sentinel'
-
-
+include 'GateWay'
+include 'Job'
+include 'RabbitMQ'
+include 'System'
+include 'Redis'
+include 'MySQL'

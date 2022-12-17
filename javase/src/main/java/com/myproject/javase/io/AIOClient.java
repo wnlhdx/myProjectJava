@@ -16,7 +16,7 @@ public class AIOClient implements Runnable {
             client.connect(new InetSocketAddress("localhost", 9999));
             while (true) {
                 client.write(ByteBuffer.wrap((new Date() + ": hello world").getBytes())).get();
-                Thread.sleep(2000);
+                //Thread.sleep(2000);
             }
         } catch (Exception e) {
             e.printStackTrace();

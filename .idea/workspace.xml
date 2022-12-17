@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de8735b9-1896-43e5-ac32-61d2546fbf9b" name="变更" comment="变更">
+      <change afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/classes/java/main/com/myproject/gateway/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/libs/GateWay.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/src/main/java/com/myproject/gateway/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/classes/java/main/com/myproject/job/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/libs/Job.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/src/main/java/com/myproject/job/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/classes/java/main/com/myproject/mysql/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/libs/MySQL.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/src/main/java/com/myproject/mysql/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/classes/java/main/com/myproject/rabbitmq/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/libs/RabbitMQ.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/src/main/java/com/myproject/rabbitmq/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/classes/java/main/com/myproject/redis/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/libs/Redis.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/src/main/java/com/myproject/redis/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/classes/java/main/com/myproject/system/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/libs/System.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/src/main/java/com/myproject/system/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/backend/build/libs/backend-0.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_19_graal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20220320.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_15_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_12_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_12_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_4_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/RoadApplet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myProjectJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1772a2e82cacb4a9e233b0d167c3e43c0ca229e6" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39efa4cdd66df14ff2b1af887e41f27195450076" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ea6a2da0d9b28d68c49707ac4f41763b02897d9" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f88994be1b7f527962aa551e58d3a73cabe8862" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/401b44accb1692db69cd27fbd415385b01def06e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4104b32fb2aa6f3afc4a26241267475206f887ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41707d57436496d9a18a469fad595f4fc809d097" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48198fc058e43fa22fce8af492de7a32407f8ce9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50a141d5682b121e98170218cc7c1e2ca4b91d6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58551fe060eab324c62a142d091e05d53adf63ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c1df94461e94677879b23dae0aee3c08516b8d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e69ada82ebf1f9241e9d5449611137f55f84c60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/608dfb57499df5947b19d6a94934718a78f32800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62246a3fc1c9069fb00b79dfa829f03aea528dad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/651f74a61d14ea84fb9e29a4aff16aaf489938cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b8cdcf94677841be0885a86167c078b875a49d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70602196ba97d75cf00a28bd7d23b1637b053ef0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7425be6f398609a544f60a66f69248473ba94a2d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81ff498db80460c03ed7317d732ab4fcb766c49f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a2775abe8a52c251d8bc62b976e85d59f1688fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97197c3ec18e0330ce1987249e241dd034ff0ed4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9faf5eaada1bcd4fe5e463359a5d8775a8cefc76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0d221597fb2670dad5c3605daa5146e1b91b356" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a36e249fc7286bf04e57ca3f9c3264ed1a43c456" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6568aed16783ec819f3faa46b8e4bb8f5240b3c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1553ddd8c3ba61c966c2d81638cc117f8f495ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc5c89f4ac2d8739a9bcdada4e531e724c6fd3fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf7b240a68f864637a6884229e3d0796ba403b1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d10b491b29355d3fb1e9dde0fbfa41c76cc0e388" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da27ff60d4cf8d29b886fde4369a1dde19364c2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc04c539655cd068b1c142d145131e63beb1c175" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e42096215c3ffdbca7f3056798314a07ed6cf815" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e46aee6c7c512a7b48980a296fca0acf004a1907" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0461af78a063f0e356cb641f20a6ea65efcc427" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8dcf2daf81db2cc717fdf92bc37cd31776754a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/GuideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/GuideTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/NIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/NIOServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/test-classes/com/myproject/javase/GuideTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/test-classes/com/myproject/javase/GuideTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/classes/java/main/com/myproject/nacos/NacosApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/classes/java/main/com/myproject/nacos/NacosApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/libs/Nacos.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/libs/Nacos.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/Sentinel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Sentinel/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud/backend/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/JavaFx">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/j2ee">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/javase">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/GateWay">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/Job">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/MySQL">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/Nacos">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/RabbitMQ">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/Redis">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/Sentinel">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/System">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/backend/dubbo">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/dubbo">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/springcloud/front">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/springcloud/backend">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/springcloud/backend/Nacos">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/springcloud/backend/Sentinel">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nacos" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nacos" type="f1a62948:ProjectNode" />
+                <item name="运行配置" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/collections/MyCollection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/thread/Threadtest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/thread/WindowUnsafe.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/springcloud/backend/Nacos/src/main/java/com/myproject/nacos/NacosApplication.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="Plastic.Settings">
+    <option name="enabled" value="false" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="24MU3kcrDFbjERN6Bas9ckIQIfU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/work/code/vscode/java/myProjectJava/j2ee&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase\src\test\resources" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\springcloud\backend\Sentinel\src\main\resources" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\springcloud\backend\Nacos\src\main\resources" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\JavaFx" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase\src\test\resources\META-INF" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase\src\main\resources\META-INF" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase\src\main\resources" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\springcloud\backend" />
+      <recent name="D:\work\code\vscode\java\myProjectJava\javase" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.myproject" />
+      <recent name="com.myproject.utils" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.wnlhdx.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Swing">
+    <configuration name="Fraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.software.Fraction" />
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.software.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Swing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.Swing" />
+      <module name="javase" />
+      <option name="PROGRAM_PARAMETERS" value="-n 1000 -r 10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CaculateTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.software.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.javase.software" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.software.CaculateTest" />
+      <option name="METHOD_NAME" value="check" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CaculateTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.software.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.javase.software" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.software.CaculateTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CaculateTest.testEuaCal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.software.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.javase.software" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.software.CaculateTest" />
+      <option name="METHOD_NAME" value="testEuaCal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="javase" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="javase" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CaculateTest.test" />
+      <item itemvalue="JUnit.CaculateTest.testEuaCal" />
+      <item itemvalue="JUnit.CaculateTest.check" />
+      <item itemvalue="应用程序.Fraction" />
+      <item itemvalue="应用程序.Swing" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Swing" />
+        <item itemvalue="JUnit.CaculateTest.testEuaCal" />
+        <item itemvalue="JUnit.CaculateTest.test" />
+        <item itemvalue="JUnit.CaculateTest.check" />
+        <item itemvalue="应用程序.Fraction" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="de8735b9-1896-43e5-ac32-61d2546fbf9b" name="变更" comment="" />
+      <created>1643439823427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643439823427</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.yaml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/JavaFx" />
+      <path value="$PROJECT_DIR$/springboot" />
+      <path value="$PROJECT_DIR$/springcloud" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/coreJavaTest/DataTypeTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/ThreadTest.java</url>
+          <line>239</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Client.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../program files/gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config/2021.1/be4db52a449c50b79cb02edb523d6b673a1cbf8/spring-cloud-starter-alibaba-nacos-config-2021.1-sources.jar!/com/alibaba/cloud/nacos/client/NacosPropertySource.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../program files/gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.24/480681a29fbbecc32d8d731e32951a2f879a72bc/spring-core-5.3.24-sources.jar!/org/springframework/core/env/CompositePropertySource.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../../../program files/gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.24/cfd8e25900c05273cb3141d403b58276fc4d32b2/spring-context-5.3.24-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>937</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/software/Caculate.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/software/Caculate.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/software/CheckRes.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalThreadStateException" package="java.lang" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.EmptyStackException" package="java.util" />
+          <option name="timeStamp" value="63" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.myproject.javase.software.Equation" memberName="res" />
+        <PinnedItemInfo parentTag="com.myproject.javase.software.Equation" memberName="equationList" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="equation.equationList.get(0).require" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myProjectJava$CollectionTest_testCollection.ic" NAME="CollectionTest.testCollection 覆盖结果" MODIFIED="1645405141946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.myproject.javastudy.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/myProjectJava$Swing.ic" NAME="Swing 覆盖结果" MODIFIED="1671222964309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.myproject.javase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/myProjectJava$TestU17_search3.ic" NAME="TestU17.search3 覆盖结果" MODIFIED="1667240552220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.myproject.javastudy.*</FILTER>
+    </SUITE>
+  </component>
+</project>

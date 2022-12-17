@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Client implements Runnable {
     @Override
     public void run() {
-        try (Socket socket = new Socket("127.0.0.1", 9999);) {
+        try (Socket socket = new Socket("localhost", 9999);) {
             while (true) {
                 socket.getOutputStream().write((new Date() + ": hello world").getBytes());
                 Thread.sleep(2000);

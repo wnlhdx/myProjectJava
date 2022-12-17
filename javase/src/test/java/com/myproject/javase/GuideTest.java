@@ -61,7 +61,7 @@ public class  GuideTest {
     @Test
     public void testNIO() throws IOException, InterruptedException {
         new Thread(new NIOServer()).start();
-        new Thread(new Client()).start();
+        new Thread(new NIOClient()).start();
         Thread.sleep(999999);
     }
 

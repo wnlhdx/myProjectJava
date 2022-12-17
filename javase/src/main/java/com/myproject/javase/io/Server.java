@@ -25,7 +25,7 @@ public class Server implements Runnable {
                                     InputStream inputStream = socket.getInputStream();
                                     // 按字节流方式读取数据
                                     while ((len = inputStream.read(data)) != -1) {
-                                        System.out.println(new String(data, 0, len));
+                                        System.out.println("received message: "+new String(data, 0, len));
                                     }
                                 }catch (Exception e) {
                                     e.printStackTrace();

@@ -6,34 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JavaFX" />
         <module name="j2ee" />
+        <module name="SpringBoot" />
         <module name="javase" />
-        <module name="javaFx" />
-        <module name="springboot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17">
-      <module name="Alarm" target="17" />
-      <module name="Eureka" target="17" />
-      <module name="JavaFx" target="17" />
-      <module name="JavaFX" target="17" />
-      <module name="ssm" target="1.5" />
+    <bytecodeTargetLevel>
+      <module name="backend.main" target="17" />
+      <module name="backend.test" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-Dfile.encoding=UTF-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Alarm" options="-parameters" />
-      <module name="Eureka" options="-parameters" />
-      <module name="JavaFX" options="" />
-      <module name="JavaFx" options="" />
-      <module name="backend" options="" />
-      <module name="j2ee" options="" />
-      <module name="javaFx" options="" />
-      <module name="javase" options="" />
-      <module name="springboot" options="-parameters" />
-      <module name="springcloud" options="" />
-      <module name="ssm" options="" />
+      <module name="SpringBoot" options="-parameters" />
     </option>
   </component>
 </project>

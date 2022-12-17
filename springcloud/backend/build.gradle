@@ -4,9 +4,12 @@ version '0.1.1'
 buildscript {
     ext {
         // 定义变量
-        springBootVersion = '+'
-        springCloudVersion = '+'
-        springCloudAlibabaVersion='+'
+        //springBootVersion = '+'
+        //springCloudVersion = '+'
+        //springCloudAlibabaVersion='+'
+        springBootVersion = '2.7.6'
+        springCloudVersion = '2021.0.5'
+        springCloudAlibabaVersion = '2021.0.4.0'
     }
     repositories {
         mavenCentral()
@@ -18,7 +21,6 @@ buildscript {
 
 allprojects {
     apply plugin: 'java'
-    apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
     sourceCompatibility = 17
@@ -44,6 +46,7 @@ subprojects {
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
             mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAlibabaVersion}"
             mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+
         }
     }
     jar {

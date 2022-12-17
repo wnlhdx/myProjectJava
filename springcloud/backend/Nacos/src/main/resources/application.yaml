@@ -1,2 +1,32 @@
 server:
-  port: 8001
+  port: 8002
+
+
+spring:
+  application:
+    name: nacos-client
+  config:
+    activate:
+      on-profile: dev
+    # 当前环境，在真实项目中，一般分为多个项目，dev为开发环境
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.1:8001  #服务地址
+        cluster-name: nacos #服务名
+        namespace: 90fedf5f-a380-490c-b3d8-5704fc405455
+        group: DEFAULT_GROUP
+        ephemeral: false
+      config:
+        server-addr: 192.168.56.1:8001  #地址
+        file-extension: yaml #配置文件格式
+        namespace: 90fedf5f-a380-490c-b3d8-5704fc405455
+        group: DEFAULT_GROUP
+      gateway:
+        routes:
+          - id: config             #路由的ID，没有固定规则但要求唯一，建议配合服务名
+            uri:  192.168.56.1:8001/nacos   #匹配后提供服务的路由地址
+            locator:
+                enabled:true
+            predicates:
+              - Path=/nacos/**

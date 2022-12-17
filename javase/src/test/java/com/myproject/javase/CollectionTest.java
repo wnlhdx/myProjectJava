@@ -7,11 +7,16 @@ import static  org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import sun.misc.Unsafe;
 
+import javax.swing.text.Segment;
+import javax.swing.tree.TreeNode;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Logger;
 
@@ -50,10 +55,12 @@ class CollectionTest {
         ArrayList<String> arrayList = new ArrayList<>();
         //线程安全的双向链表.频繁的插入和删除
         LinkedList<String> linkedList = new LinkedList<>();
+        arrayList.add("1");
         List<String> synchronizedarray=Collections.synchronizedList(arrayList);
+        linkedList.offer("1");
         //多读少写线程安全
         CopyOnWriteArrayList<String> copyOnWriteArrayList=new CopyOnWriteArrayList<>();
-
+        ArrayDeque<String> arrayDeque=new ArrayDeque<>();
     }
 
     @Test
@@ -95,6 +102,9 @@ class CollectionTest {
     void TestCollections() {
         Collections.synchronizedCollection(new ArrayList<>());
         Enum enum1=Enum.valueOf(Enum.class,"A");
+        Segment segment=new Segment();
+        ConcurrentHashMap concurrentHashMap=new ConcurrentHashMap();
+        Unsafe unsafe;
     }
 
 }

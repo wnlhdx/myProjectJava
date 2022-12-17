@@ -27,17 +27,14 @@ public class NIOServer implements Runnable {
         try {
             Selector serverSelector = Selector.open();
             Selector clientSelector = Selector.open();
-        // 2. clientSelector负责轮询连接是否有数据可读
-
-                new Thread(() -> {
                     try( ServerSocketChannel listenerChannel = ServerSocketChannel.open()) {
                         // 对应IO编程中服务端启动
                         listenerChannel.socket().bind(new InetSocketAddress(9999));
                         listenerChannel.configureBlocking(false);
                         listenerChannel.register(serverSelector, SelectionKey.OP_ACCEPT);
-                        while (true) {
                             // 监测是否有新的连接，这里的1指的是阻塞的时间为 1ms
-                            if (serverSelector.select(1) > 0) {
+                            if (serverSelector.select(1000) > 0) {
+                                System.out.println("nio reg");
                                 Set<SelectionKey> set = serverSelector.selectedKeys();
                                 Iterator<SelectionKey> keyIterator = set.iterator();
                                 while (keyIterator.hasNext()) {
@@ -55,29 +52,23 @@ public class NIOServer implements Runnable {
                                     }
                                 }
                             }
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }).start();
-                new Thread(() -> {
-                    try {
                         while (true) {
                             // (2) 批量轮询是否有哪些连接有数据可读，这里的1指的是阻塞的时间为 1ms
-                            if (clientSelector.select(1) > 0) {
+                            System.out.println("nio query");
+                            if (clientSelector.select() > 0) {
                                 Set<SelectionKey> set = clientSelector.selectedKeys();
                                 Iterator<SelectionKey> keyIterator = set.iterator();
                                 while (keyIterator.hasNext()) {
                                     SelectionKey key = keyIterator.next();
-                                    if (key.isReadable()) {
+                                    if (key.isReadable()&&key.channel()instanceof SocketChannel) {
                                         try {
                                             SocketChannel clientChannel = (SocketChannel) key.channel();
                                             ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                                             // (3) 面向 Buffer
                                             clientChannel.read(byteBuffer);
                                             byteBuffer.flip();
-                                            System.out.println(
-                                                    Charset.defaultCharset().newDecoder().decode(byteBuffer).toString());
+                                            String res=Charset.defaultCharset().newDecoder().decode(byteBuffer).toString();
+                                            System.out.println("received message: "+res);
                                         } finally {
                                             keyIterator.remove();
                                             key.interestOps(SelectionKey.OP_READ);
@@ -89,7 +80,6 @@ public class NIOServer implements Runnable {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                }).start();
         } catch (Exception e) {
             e.printStackTrace();
         }

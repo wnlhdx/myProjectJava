@@ -1,5 +1,7 @@
 package com.myproject.javase;
 
+import com.myproject.javase.software.Caculate;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -15,28 +17,41 @@ public class Swing
 
     public  static void main( String[] args )
     {
-        JFrame frame=new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Container container=frame.getContentPane();
-        //frame.setSize(500,500);
-        frame.setBounds(100,100,500,500);
-        frame.setIconImage(null);
-        frame.setResizable(true);
-        frame.setTitle(Toolkit.getDefaultToolkit().getScreenSize().toString());
-        frame.setTitle(Arrays.toString(GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames()));
-        TestG  testG=new TestG();
-        testG.setBackground(Color.WHITE);
-        testG.setForeground(Color.WHITE);
-        Button button=new Button();
-        button.setBounds(0,0,100,100);
-        button.addActionListener(x->button.setBackground(Color.RED));
-
-        container.add(testG,0);
-        container.add(button,1);
-        frame.pack();
-        frame.setVisible(true);
-
-
+//        JFrame frame=new JFrame();
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        Container container=frame.getContentPane();
+//        //frame.setSize(500,500);
+//        frame.setBounds(100,100,500,500);
+//        frame.setIconImage(null);
+//        frame.setResizable(true);
+//        frame.setTitle(Toolkit.getDefaultToolkit().getScreenSize().toString());
+//        frame.setTitle(Arrays.toString(GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames()));
+//        TestG  testG=new TestG();
+//        testG.setBackground(Color.WHITE);
+//        testG.setForeground(Color.WHITE);
+//        Button button=new Button();
+//        button.setBounds(0,0,100,100);
+//        button.addActionListener(x->button.setBackground(Color.RED));
+//
+//        container.add(testG,0);
+//        container.add(button,1);
+//        frame.pack();
+//        frame.setVisible(true);
+        Caculate caculate=new Caculate();
+        int number=1000;
+        int scope=10;
+        for(int i=0;i<args.length;i++){
+            String arg=args[i];
+            if(arg.equals("-n")){
+                i+=1;
+                number=Integer.parseInt(args[i]);
+            }else if(arg.equals("-r")){
+                i+=1;
+                scope=Integer.parseInt(args[i]);
+                Caculate.NUM_MAX=scope;
+            }
+        }
+        caculate.CaculateRes(number);
     }
     static class TestG extends JComponent{
         @Override
