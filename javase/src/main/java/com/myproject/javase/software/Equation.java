@@ -94,6 +94,7 @@ public class Equation {
         System.out.println("结果"+res);
         System.out.println("层数"+level);
         System.out.println("子表达式"+equationList);
+        System.out.println("数字"+isNumber);
         chekcRes();
         equationRes=new StringBuilder(equationString).append("=").append(res);
     }
