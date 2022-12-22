@@ -13,8 +13,27 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="backend.main" target="17" />
-      <module name="backend.test" target="17" />
+      <module name="backend.GateWay.main~1" target="17" />
+      <module name="backend.GateWay.test~1" target="17" />
+      <module name="backend.Job.main~1" target="17" />
+      <module name="backend.Job.test~1" target="17" />
+      <module name="backend.MySQL.main~1" target="17" />
+      <module name="backend.MySQL.test~1" target="17" />
+      <module name="backend.Nacos.main~1" target="17" />
+      <module name="backend.Nacos.test~1" target="17" />
+      <module name="backend.RabbitMQ.main~1" target="17" />
+      <module name="backend.RabbitMQ.test~1" target="17" />
+      <module name="backend.Redis.main~1" target="17" />
+      <module name="backend.Redis.test~1" target="17" />
+      <module name="backend.Sentinel.main~1" target="17" />
+      <module name="backend.Sentinel.test~1" target="17" />
+      <module name="backend.System.main~1" target="17" />
+      <module name="backend.System.test~1" target="17" />
+      <module name="backend_main" target="17" />
+      <module name="backend_test" target="17" />
+      <module name="Test" target="17" />
+      <module name="Test_main" target="17" />
+      <module name="Test_test" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

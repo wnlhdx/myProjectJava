@@ -22,6 +22,7 @@ buildscript {
 allprojects {
     apply plugin: 'java'
     apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
 
     sourceCompatibility = 17
     targetCompatibility = 17

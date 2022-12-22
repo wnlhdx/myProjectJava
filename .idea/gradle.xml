@@ -10,6 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Apollo" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Dubbo" />
+            <option value="$PROJECT_DIR$/springcloud/backend/ElasticSearch" />
             <option value="$PROJECT_DIR$/springcloud/backend/GateWay" />
             <option value="$PROJECT_DIR$/springcloud/backend/Job" />
             <option value="$PROJECT_DIR$/springcloud/backend/MySQL" />
@@ -18,16 +21,7 @@
             <option value="$PROJECT_DIR$/springcloud/backend/Redis" />
             <option value="$PROJECT_DIR$/springcloud/backend/Sentinel" />
             <option value="$PROJECT_DIR$/springcloud/backend/System" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/front" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/springcloud/front" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Zookeeper" />
           </set>
         </option>
       </GradleProjectSettings>
