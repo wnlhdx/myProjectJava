@@ -5,198 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8735b9-1896-43e5-ac32-61d2546fbf9b" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/classes/java/main/com/myproject/gateway/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/libs/GateWay.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/GateWay/src/main/java/com/myproject/gateway/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/classes/java/main/com/myproject/job/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/libs/Job.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Job/src/main/java/com/myproject/job/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/classes/java/main/com/myproject/mysql/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/libs/MySQL.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/MySQL/src/main/java/com/myproject/mysql/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/classes/java/main/com/myproject/rabbitmq/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/libs/RabbitMQ.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/RabbitMQ/src/main/java/com/myproject/rabbitmq/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/classes/java/main/com/myproject/redis/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/libs/Redis.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/Redis/src/main/java/com/myproject/redis/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/classes/java/main/com/myproject/system/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/libs/System.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/System/src/main/java/com/myproject/system/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/backend/build/libs/backend-0.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_19_graal.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20220320.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_15_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_12_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_12_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_12_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_4_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/RoadApplet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myProjectJava.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/1772a2e82cacb4a9e233b0d167c3e43c0ca229e6" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39efa4cdd66df14ff2b1af887e41f27195450076" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/7.4/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3ea6a2da0d9b28d68c49707ac4f41763b02897d9" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3f88994be1b7f527962aa551e58d3a73cabe8862" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/401b44accb1692db69cd27fbd415385b01def06e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4104b32fb2aa6f3afc4a26241267475206f887ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41707d57436496d9a18a469fad595f4fc809d097" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48198fc058e43fa22fce8af492de7a32407f8ce9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50a141d5682b121e98170218cc7c1e2ca4b91d6b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/58551fe060eab324c62a142d091e05d53adf63ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c1df94461e94677879b23dae0aee3c08516b8d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e69ada82ebf1f9241e9d5449611137f55f84c60" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/608dfb57499df5947b19d6a94934718a78f32800" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62246a3fc1c9069fb00b79dfa829f03aea528dad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/651f74a61d14ea84fb9e29a4aff16aaf489938cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b8cdcf94677841be0885a86167c078b875a49d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70602196ba97d75cf00a28bd7d23b1637b053ef0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7425be6f398609a544f60a66f69248473ba94a2d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81ff498db80460c03ed7317d732ab4fcb766c49f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a2775abe8a52c251d8bc62b976e85d59f1688fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97197c3ec18e0330ce1987249e241dd034ff0ed4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9faf5eaada1bcd4fe5e463359a5d8775a8cefc76" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0d221597fb2670dad5c3605daa5146e1b91b356" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a36e249fc7286bf04e57ca3f9c3264ed1a43c456" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6568aed16783ec819f3faa46b8e4bb8f5240b3c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b1553ddd8c3ba61c966c2d81638cc117f8f495ce" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc5c89f4ac2d8739a9bcdada4e531e724c6fd3fb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf7b240a68f864637a6884229e3d0796ba403b1b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d10b491b29355d3fb1e9dde0fbfa41c76cc0e388" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da27ff60d4cf8d29b886fde4369a1dde19364c2c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc04c539655cd068b1c142d145131e63beb1c175" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e42096215c3ffdbca7f3056798314a07ed6cf815" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e46aee6c7c512a7b48980a296fca0acf004a1907" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0461af78a063f0e356cb641f20a6ea65efcc427" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8dcf2daf81db2cc717fdf92bc37cd31776754a6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/AIOServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/NIOServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/io/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/CollectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/GuideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/GuideTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/AIOServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/NIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/NIOServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/classes/com/myproject/javase/io/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/test-classes/com/myproject/javase/GuideTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/test-classes/com/myproject/javase/GuideTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/classes/java/main/com/myproject/nacos/NacosApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/classes/java/main/com/myproject/nacos/NacosApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/libs/Nacos.jar" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/libs/Nacos.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Nacos/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Nacos/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/Sentinel/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/Sentinel/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud/backend/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud/backend/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/main.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/pom.xml.versionsBackup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/src/main/java/com/myproject/javafx/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/src/main/java/com/myproject/javafx/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaFx/src/main/resources/com/myproject/javafx/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +135,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JavaFx" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/javase/src/main/java/com/myproject/javase/collections/MyCollection.java" root0="FORCE_HIGHLIGHTING" />
