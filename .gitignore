@@ -1,2 +1,12 @@
-springcloud/.gradle
-./idea
+*/.gradle
+*/.idea
+*/.mvn
+*/.git
+*/target
+*/.settings
+*/.classpath
+/.idea
+springcloud/front/public
+springcloud/front/node_modules
+springcloud/gradle
+JavaFx/logs
