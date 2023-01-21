@@ -1,0 +1,8 @@
+dependencies {
+    implementation('org.apache.shardingsphere:shardingsphere-jdbc-core-spring-boot-starter:+')
+    implementation('org.springframework.cloud:spring-cloud-starter-bootstrap:+')
+    //implementation('com.spring4all:spring-boot-starter-hbase:+')
+    implementation('org.apache.hadoop:hadoop-common:+')
+    implementation('org.apache.hadoop:hadoop-hdfs:+')
+    implementation('org.apache.hadoop:hadoop-client:+')
+}

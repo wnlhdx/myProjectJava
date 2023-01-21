@@ -8,8 +8,10 @@
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
         <option value="$PROJECT_DIR$/javase/pom.xml" />
         <option value="$PROJECT_DIR$/j2ee/pom.xml" />
+        <option value="$PROJECT_DIR$/quarkus/code-with-quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/quarkus/quarkus/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="graalvm-19" project-jdk-type="JavaSDK" />
 </project>

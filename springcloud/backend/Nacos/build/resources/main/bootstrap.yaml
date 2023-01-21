@@ -1,12 +1,18 @@
 server:
   port: 8002
 
+
 spring:
   application:
     name: nacos-client
   profiles:
-    # 当前环境，在真实项目中，一般分为多个项目，dev为开发环境
     active: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+    # 当前环境，在真实项目中，一般分为多个项目，dev为开发环境
   cloud:
     nacos:
       discovery:
@@ -14,6 +20,7 @@ spring:
         cluster-name: nacos #服务名
         namespace: 90fedf5f-a380-490c-b3d8-5704fc405455
         group: DEFAULT_GROUP
+        ephemeral: false
       config:
         server-addr: 192.168.56.1:8001  #地址
         file-extension: yaml #配置文件格式

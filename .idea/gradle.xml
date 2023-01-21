@@ -5,8 +5,15 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/istlo" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../program files/gradle" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../program files/gradle" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../program files/gradle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend" />
@@ -14,6 +21,7 @@
             <option value="$PROJECT_DIR$/springcloud/backend/Dubbo" />
             <option value="$PROJECT_DIR$/springcloud/backend/ElasticSearch" />
             <option value="$PROJECT_DIR$/springcloud/backend/GateWay" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Hadoop" />
             <option value="$PROJECT_DIR$/springcloud/backend/Job" />
             <option value="$PROJECT_DIR$/springcloud/backend/MySQL" />
             <option value="$PROJECT_DIR$/springcloud/backend/Nacos" />
