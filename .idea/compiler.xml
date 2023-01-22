@@ -2,17 +2,44 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaFX" />
-        <module name="j2ee" />
         <module name="SpringBoot" />
         <module name="javase" />
+        <module name="javafx" />
         <module name="quarkus" />
+        <module name="jakartaee" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="backend.Apollo" target="19" />
+      <module name="backend.Apollo.main" target="19" />
+      <module name="backend.Apollo.test" target="19" />
+      <module name="backend.Dubbo" target="19" />
+      <module name="backend.Dubbo.Consumer" target="19" />
+      <module name="backend.Dubbo.Consumer.main" target="19" />
+      <module name="backend.Dubbo.Consumer.test" target="19" />
+      <module name="backend.Dubbo.Interface" target="19" />
+      <module name="backend.Dubbo.Interface.main" target="19" />
+      <module name="backend.Dubbo.Interface.test" target="19" />
+      <module name="backend.Dubbo.main" target="19" />
+      <module name="backend.Dubbo.Provider" target="19" />
+      <module name="backend.Dubbo.Provider.main" target="19" />
+      <module name="backend.Dubbo.Provider.test" target="19" />
+      <module name="backend.Dubbo.test" target="19" />
+      <module name="backend.GateWay" target="19" />
+      <module name="backend.GateWay.main" target="19" />
+      <module name="backend.GateWay.test" target="19" />
+      <module name="backend.RabbitMQ" target="19" />
+      <module name="backend.RabbitMQ.main" target="19" />
+      <module name="backend.RabbitMQ.test" target="19" />
+      <module name="backend.Zookeeper" target="19" />
+      <module name="backend.Zookeeper.main" target="19" />
+      <module name="backend.Zookeeper.test" target="19" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -1,3 +1,5 @@
 dependencies {
     implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:+')
+    implementation('com.alibaba.csp:sentinel-transport-simple-http:+')
+    implementation('com.alibaba.csp:sentinel-core:+')
 }

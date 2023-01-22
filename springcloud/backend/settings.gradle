@@ -1,14 +1,16 @@
 rootProject.name = 'backend'
 include 'Nacos'
 include 'Sentinel'
-include 'GateWay'
 include 'Job'
-include 'RabbitMQ'
+include 'RocketMQ'
 include 'System'
 include 'Redis'
 include 'MySQL'
 include 'ElasticSearch'
-include 'Zookeeper'
-include 'Apollo'
-include 'Dubbo'
+include 'Consumer'
+project(':Consumer').projectDir = file('Dubbo/Consumer')
+include 'Interface'
+project(':Interface').projectDir = file('Dubbo/Interface')
+include 'Provider'
+project(':Provider').projectDir = file('Dubbo/Provider')
 include 'Hadoop'

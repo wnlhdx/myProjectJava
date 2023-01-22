@@ -1,4 +1,0 @@
-dependencies {
-    implementation('org.springframework.cloud:spring-cloud-starter-bootstrap:+')
-    implementation('org.apache.zookeeper:zookeeper:+')
-}

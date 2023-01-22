@@ -1,0 +1,8 @@
+dependencies {
+    implementation('org.springframework.cloud:spring-cloud-starter-bootstrap:+')
+    implementation('org.apache.dubbo:dubbo:+')
+    implementation('org.apache.dubbo:dubbo-spring-boot-starter:+')
+    implementation('org.springframework.boot:spring-boot-autoconfigure:+')
+    implementation('org.apache.dubbo:dubbo-dependencies-zookeeper:+')
+    implementation project(':Interface')
+}

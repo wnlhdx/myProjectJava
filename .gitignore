@@ -6,6 +6,8 @@
 **/.settings
 **/.classpath
 **/build
+.idea
+quarkus/vue/node_modules
 springcloud/front/public
 springcloud/front/node_modules
 springcloud/gradle

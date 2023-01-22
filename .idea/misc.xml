@@ -10,8 +10,12 @@
         <option value="$PROJECT_DIR$/j2ee/pom.xml" />
         <option value="$PROJECT_DIR$/quarkus/code-with-quarkus/pom.xml" />
         <option value="$PROJECT_DIR$/quarkus/quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/jarkataee/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="graalvm-19" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
 </project>

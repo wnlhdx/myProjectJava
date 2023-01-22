@@ -17,19 +17,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend" />
-            <option value="$PROJECT_DIR$/springcloud/backend/Apollo" />
-            <option value="$PROJECT_DIR$/springcloud/backend/Dubbo" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Dubbo/Consumer" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Dubbo/Interface" />
+            <option value="$PROJECT_DIR$/springcloud/backend/Dubbo/Provider" />
             <option value="$PROJECT_DIR$/springcloud/backend/ElasticSearch" />
-            <option value="$PROJECT_DIR$/springcloud/backend/GateWay" />
             <option value="$PROJECT_DIR$/springcloud/backend/Hadoop" />
             <option value="$PROJECT_DIR$/springcloud/backend/Job" />
             <option value="$PROJECT_DIR$/springcloud/backend/MySQL" />
             <option value="$PROJECT_DIR$/springcloud/backend/Nacos" />
-            <option value="$PROJECT_DIR$/springcloud/backend/RabbitMQ" />
             <option value="$PROJECT_DIR$/springcloud/backend/Redis" />
+            <option value="$PROJECT_DIR$/springcloud/backend/RocketMQ" />
             <option value="$PROJECT_DIR$/springcloud/backend/Sentinel" />
             <option value="$PROJECT_DIR$/springcloud/backend/System" />
-            <option value="$PROJECT_DIR$/springcloud/backend/Zookeeper" />
           </set>
         </option>
       </GradleProjectSettings>
