@@ -5,18 +5,23 @@
     <resultMap id="BaseResultMap" type="com.myproject.springboot.entity.TestEntity">
         <result column="username" jdbcType="VARCHAR" property="userName" />
         <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="role"  jdbcType="INTEGER"  property="role" />
     </resultMap>
  
-    <select id="login" resultType="com.myproject.springboot.entity.TestEntity">
-        select * from TestUser where username = #{userName} and password = #{password}
+    <select id="queryUser" resultType="com.myproject.springboot.entity.TestEntity">
+        select * from TestUser where username = #{userName}
     </select>
  	<update id="setPass" >
         update TestUser set password = #{password}  where username = #{userName}
     </update>
+    <update id="changeToAdmin" >
+        update TestUser set role = 1 where username = #{userName}
+    </update>
     <insert id="addUser" >
-        insert into TestUser values(#{userName},#{password})
+        insert into TestUser values(#{userName},#{password},0)
     </insert>
     <delete id='delUser'>
     	delete from TestUser where username = #{userName}
     </delete>
+
 </mapper>

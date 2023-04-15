@@ -36,18 +36,18 @@ export default {
   },
   methods: {
     Login() {
-      this.$router.push('/login')
+      this.$router.push('/index')
     },
     ShowPass() {
       this.show = !this.show
     },
     Change() {
       axios
-        .post('http://localhost:8888/SetPass', this.FormUser())
+        .post('http://localhost:3333/api/SetPass', this.FormUser())
         .then((response) => {
           if (response.data == '设置成功') {
             ElMessageBox.alert(response.data, '密码修改成功')
-            this.$router.push('/login')
+            this.$router.push('/index')
           } else {
             ElMessageBox.alert(response.data, '密码修改失败')
           }
@@ -55,11 +55,11 @@ export default {
     },
     Delete() {
       axios
-        .post('http://localhost:8888/DelUser', this.FormUser())
+        .post('http://localhost:3333/api/DelUser', this.FormUser())
         .then((response) => {
           if (response.data == '删除成功') {
             ElMessageBox.alert(response.data, '删除成功')
-            this.$router.push('/login')
+            this.$router.push('/index')
           } else {
             ElMessageBox.alert(response.data, '删除失败')
           }

@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 /**
  * @author lkxl
  */
-class SDTest {
+class SDTest<TB> {
     private final Logger logger = Logger.getLogger("test.Test");
     private final StringAndDateTest test=new StringAndDateTest();
 
@@ -37,10 +37,13 @@ class SDTest {
 //        arrayList.sort(ComparableThings.getComparetor());
 //        logger.info(arrayList.toString());
 //    }
+//
+//    @Test
+//    void testSystem(){
+//        new TestSystem().testSystem();
+//        assert true;
+//    }
 
-    @Test
-    void testSystem(){
-        new TestSystem().testSystem();
-        assert true;
-    }
+
+
 }

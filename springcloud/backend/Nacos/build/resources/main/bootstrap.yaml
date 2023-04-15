@@ -16,13 +16,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.56.1:8001  #服务地址
+        server-addr: localhost:8001  #服务地址
         cluster-name: nacos #服务名
         namespace: 90fedf5f-a380-490c-b3d8-5704fc405455
         group: DEFAULT_GROUP
         ephemeral: false
       config:
-        server-addr: 192.168.56.1:8001  #地址
+        server-addr: localhost:8001  #地址
         file-extension: yaml #配置文件格式
         namespace: 90fedf5f-a380-490c-b3d8-5704fc405455
         group: DEFAULT_GROUP

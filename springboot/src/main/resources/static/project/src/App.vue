@@ -6,7 +6,7 @@
 export default {
   name: 'app',
   mounted() {
-    this.$router.push('/login')
+    this.$router.push('/index')
   },
 }
 </script>

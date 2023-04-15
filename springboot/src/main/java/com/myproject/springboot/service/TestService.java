@@ -2,18 +2,36 @@ package com.myproject.springboot.service;
 
 import com.myproject.springboot.entity.TestEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.myproject.springboot.mapper.TestMapper;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
  * @author 31446
  */
 @Service
-public class TestService {
+public class TestService implements UserDetailsService {
 	@Autowired
     TestMapper testMapper;
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
     public String addUser(String userName, String password){
+        password=passwordEncoder().encode(password);
         if(testMapper.addUser(userName,password)>0) {
         	return "注册成功";
         }else {
@@ -39,11 +57,34 @@ public class TestService {
     }
     
     public String login(String userName, String password){
-    	TestEntity user =testMapper.login(userName,password);
+    	TestEntity user =testMapper.queryUser(userName);
     	if(user!=null) {
          	return user.getUserName();
          }else {
         	return "登陆失败";
          }
+    }
+
+    public String changeToAdmin(String userName){
+        if(testMapper.changeToAdmin(userName)>0) {
+            return "已提升为管理员，提升成功";
+        }else {
+            return "已经是管理员，提升失败";
+        }
+    }
+
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        TestEntity user =testMapper.queryUser(username);
+        Collection<GrantedAuthority> authList = getAuthorities();
+        return user;
+    }
+
+    private Collection<GrantedAuthority> getAuthorities(){
+        List<GrantedAuthority> authList = new ArrayList<GrantedAuthority>();
+        authList.add(new SimpleGrantedAuthority("0"));
+        authList.add(new SimpleGrantedAuthority("1"));
+        return authList;
     }
 }

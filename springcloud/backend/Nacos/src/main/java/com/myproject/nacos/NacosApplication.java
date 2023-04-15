@@ -7,8 +7,10 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
 import org.springframework.core.env.CompositePropertySource;
 import org.springframework.web.client.RestTemplate;
+
 
 /**
  * @author lkxl
@@ -21,10 +23,4 @@ public class NacosApplication {
         SpringApplication.run(NacosApplication.class, args);
     }
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate(RestTemplateBuilder builder){
-        //spring官网建议RestTemplateBuilder构造器来进行构造，这里体现了构造者设计模式
-        return builder.build();
-    }
 }

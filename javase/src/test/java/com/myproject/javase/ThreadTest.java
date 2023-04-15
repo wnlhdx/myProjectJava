@@ -301,10 +301,17 @@ public class ThreadTest {
         exit.whenComplete((k,t)->System.out.println("ok"));
     }
 
+//    @Test
+//    public void testVirtual(){
+//        Thread virtualThread1=Thread.startVirtualThread(new RunnableTest());
+//        Thread vt2=Thread.ofVirtual().start(new RunnableTest());
+//        ExecutorService vtp=Executors.newVirtualThreadPerTaskExecutor();
+//    }
+
     @Test
-    public void testVirtual(){
-        Thread virtualThread1=Thread.startVirtualThread(new RunnableTest());
-        Thread vt2=Thread.ofVirtual().start(new RunnableTest());
-        ExecutorService vtp=Executors.newVirtualThreadPerTaskExecutor();
+    public void  testSy(){
+        synchronized(this){
+            System.out.println("1");
+        }
     }
 }

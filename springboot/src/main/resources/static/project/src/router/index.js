@@ -1,12 +1,12 @@
 import {createRouter,createWebHistory} from 'vue-router' 
-import login from '../components/login.vue'
+import login from '../components/index.vue'
 import user from '../components/user.vue'
 
 
 const routes=[
-  {path: '/login', component:login},
+  {path: '/index', component:index},
   {path: '/user/:username', component:user},
-  {path:'/:pathMatch(.*)',redirect:'/login'}
+  {path:'/:pathMatch(.*)',redirect:'/index'}
 ]
 
 const router = createRouter({

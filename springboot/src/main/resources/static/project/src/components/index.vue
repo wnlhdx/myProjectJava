@@ -34,7 +34,7 @@ export default {
   methods: {
     Login() {
       axios
-        .post('http://localhost:8888/Login', this.FormUser())
+        .post('http://localhost:3333/api/Login', this.FormUser())
         .then((response) => {
           if (response.data == this.user.name) {
             this.$router.push('/user/' + this.user.name)
@@ -45,11 +45,11 @@ export default {
     },
     Register() {
       axios
-        .post('http://localhost:8888/AddUser', this.FormUser())
+        .post('http://localhost:3333/api/AddUser', this.FormUser())
         .then(function (response) {
           if (response.data == '注册成功') {
             ElMessageBox.alert(response.data, '注册成功')
-            this.$router.push('/login')
+            this.$router.push('/index')
           } else {
             ElMessageBox.alert(response.data, '注册失败')
           }

@@ -5,4 +5,6 @@ dependencies {
     implementation('org.apache.hadoop:hadoop-common:+')
     implementation('org.apache.hadoop:hadoop-hdfs:+')
     implementation('org.apache.hadoop:hadoop-client:+')
+    implementation('com.pivotal:greenplum-jdbc:+')
+
 }
