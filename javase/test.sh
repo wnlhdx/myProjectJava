@@ -1,1 +1,1 @@
-mvn -Dtest=ThreadTest#*TestProcess test
+mvn -Dtest=streamTest#*testStream test
