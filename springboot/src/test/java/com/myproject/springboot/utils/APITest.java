@@ -1,10 +1,6 @@
 package com.myproject.springboot.utils;
 
 
-import com.myproject.springboot.config.WebSecurityConfig;
-import com.myproject.springboot.controller.TestController;
-import com.myproject.springboot.mapper.TestMapper;
-import com.myproject.springboot.service.TestService;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -12,10 +8,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
@@ -31,7 +25,7 @@ import org.springframework.web.context.WebApplicationContext;
 @AutoConfigureMockMvc
 @SpringBootTest
 @WithMockUser(username = "wnlhdx", password = "w1995520")
-public class ServiceTest {
+public class APITest {
     @Autowired
     private WebApplicationContext wac;
 
@@ -43,7 +37,7 @@ public class ServiceTest {
     }
     @Autowired
     private MockMvc mockMvc;
-    private static final Logger log= LoggerFactory.getLogger(ServiceTest.class);
+    private static final Logger log= LoggerFactory.getLogger(AplicationTest.class);
     @Test
     void testController() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders.post("/login")

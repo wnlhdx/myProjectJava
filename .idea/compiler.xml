@@ -40,7 +40,6 @@
       <module name="backend.Zookeeper" target="19" />
       <module name="backend.Zookeeper.main" target="19" />
       <module name="backend.Zookeeper.test" target="19" />
-      <module name="JavaFX" target="19" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

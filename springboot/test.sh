@@ -1,0 +1,1 @@
+mvn -Dtest=streamTest#*testStream test
