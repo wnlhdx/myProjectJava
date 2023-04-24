@@ -11,7 +11,7 @@ import java.util.Collection;
 
 @Component
 @Data
-public class TestEntity implements UserDetails {
+public class LoginEntity implements UserDetails {
 	private String userName;
     private String password;
 	private Integer isAdmin;

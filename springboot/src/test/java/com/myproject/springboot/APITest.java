@@ -1,4 +1,4 @@
-package com.myproject.springboot.utils;
+package com.myproject.springboot;
 
 
 import org.junit.Before;

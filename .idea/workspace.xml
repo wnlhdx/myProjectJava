@@ -274,9 +274,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.myproject.springboot" />
+      <recent name="com.myproject.springboot.service" />
+      <recent name="com.myproject.springboot.controller" />
       <recent name="com.myproject.dubbo.provider" />
       <recent name="com.myproject" />
-      <recent name="com.myproject.utils" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wnlhdx.utils" />
@@ -285,7 +287,7 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AplicationTest.testLoginService">
+  <component name="RunManager" selected="JUnit.OsOpertaionTest.testOsOperation">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
       <module name="SpringBoot" />
@@ -299,29 +301,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myproject.nacos.NacosApplication" />
-      <module name="backend.Nacos.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.nacos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AplicationTest.testAddService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.utils.*" />
+          <option name="PATTERN" value="com.myproject.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.utils.AplicationTest" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.AplicationTest" />
       <option name="METHOD_NAME" value="testAddService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -332,29 +321,45 @@
       <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.utils.*" />
+          <option name="PATTERN" value="com.myproject.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.utils.AplicationTest" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.AplicationTest" />
       <option name="METHOD_NAME" value="testLoginService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadTest.testSy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javase" />
+    <configuration name="DatabaseTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.javase.*" />
+          <option name="PATTERN" value="com.myproject.springboot.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.javase" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.ThreadTest" />
-      <option name="METHOD_NAME" value="testSy" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.dao.DatabaseTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OsOpertaionTest.testOsOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.springboot.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.utils.OsOpertaionTest" />
+      <option name="METHOD_NAME" value="testOsOperation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -385,17 +390,17 @@
       <item itemvalue="Docker.Docker 镜像" />
       <item itemvalue="JUnit.AplicationTest.testAddService" />
       <item itemvalue="JUnit.AplicationTest.testLoginService" />
-      <item itemvalue="JUnit.ThreadTest.testSy" />
-      <item itemvalue="应用程序.NacosApplication" />
+      <item itemvalue="JUnit.DatabaseTest.testLogin" />
+      <item itemvalue="JUnit.OsOpertaionTest.testOsOperation" />
       <item itemvalue="应用程序.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OsOpertaionTest.testOsOperation" />
+        <item itemvalue="JUnit.DatabaseTest.testLogin" />
         <item itemvalue="JUnit.AplicationTest.testLoginService" />
         <item itemvalue="JUnit.AplicationTest.testAddService" />
         <item itemvalue="应用程序.Application" />
-        <item itemvalue="应用程序.NacosApplication" />
-        <item itemvalue="JUnit.ThreadTest.testSy" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +524,7 @@
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/myproject/springboot/controller/TestController.java</url>
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/myproject/springboot/controller/LoginController.java</url>
           <line>18</line>
           <option name="timeStamp" value="115" />
         </line-breakpoint>

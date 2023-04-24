@@ -1,6 +1,6 @@
 package com.myproject.springboot.service;
 
-import com.myproject.springboot.entity.TestEntity;
+import com.myproject.springboot.entity.LoginEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.core.GrantedAuthority;
@@ -12,7 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.myproject.springboot.mapper.TestMapper;
+import com.myproject.springboot.mapper.LoginMapper;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -22,9 +22,9 @@ import java.util.List;
  * @author 31446
  */
 @Service
-public class TestService implements UserDetailsService {
+public class LoginService implements UserDetailsService {
 	@Autowired
-    TestMapper testMapper;
+    LoginMapper loginMapper;
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -32,7 +32,7 @@ public class TestService implements UserDetailsService {
 
     public String addUser(String userName, String password){
         password=passwordEncoder().encode(password);
-        if(testMapper.addUser(userName,password)>0) {
+        if(loginMapper.addUser(userName,password)>0) {
         	return "注册成功";
         }else {
         	return "注册失败";
@@ -41,7 +41,7 @@ public class TestService implements UserDetailsService {
     }
 
     public String delUser(String userName){
-    	 if(testMapper.delUser(userName)>0) {
+    	 if(loginMapper.delUser(userName)>0) {
          	return "删除成功";
          }else {
          	return "删除失败";
@@ -49,7 +49,7 @@ public class TestService implements UserDetailsService {
     }
     
     public String setPass(String userName, String password){
-    	if(testMapper.setPass(userName,password)>0) {
+    	if(loginMapper.setPass(userName,password)>0) {
          	return "设置成功";
          }else {
          	return "设置失败";
@@ -57,7 +57,7 @@ public class TestService implements UserDetailsService {
     }
     
     public String login(String userName, String password){
-    	TestEntity user =testMapper.queryUser(userName);
+    	LoginEntity user = loginMapper.queryUser(userName);
     	if(user!=null) {
          	return user.getUserName();
          }else {
@@ -66,7 +66,7 @@ public class TestService implements UserDetailsService {
     }
 
     public String changeToAdmin(String userName){
-        if(testMapper.changeToAdmin(userName)>0) {
+        if(loginMapper.changeToAdmin(userName)>0) {
             return "已提升为管理员，提升成功";
         }else {
             return "已经是管理员，提升失败";
@@ -76,7 +76,7 @@ public class TestService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        TestEntity user =testMapper.queryUser(username);
+        LoginEntity user = loginMapper.queryUser(username);
         Collection<GrantedAuthority> authList = getAuthorities();
         return user;
     }

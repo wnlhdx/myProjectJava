@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class OsOpertaion {
-	public String checkOS(){
+	public static String checkOS(){
 		return System.getProperty("os.name");
 	}
 }

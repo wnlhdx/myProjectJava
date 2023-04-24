@@ -1,9 +1,9 @@
-package com.myproject.springboot.utils;
+package com.myproject.springboot;
 
-import com.myproject.springboot.controller.TestController;
-import com.myproject.springboot.entity.TestEntity;
-import com.myproject.springboot.mapper.TestMapper;
-import com.myproject.springboot.service.TestService;
+import com.myproject.springboot.controller.LoginController;
+import com.myproject.springboot.entity.LoginEntity;
+import com.myproject.springboot.mapper.LoginMapper;
+import com.myproject.springboot.service.LoginService;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -19,18 +19,18 @@ import org.springframework.test.util.ReflectionTestUtils;
 @SpringBootTest
 public class AplicationTest {
     @InjectMocks
-    private TestController mockitoController;
+    private LoginController mockitoController;
     @InjectMocks
-    private TestService mockitoService;
+    private LoginService mockitoService;
     @Mock
-    private TestMapper mockitoDao;
+    private LoginMapper mockitoDao;
     @Test
     public void testLoginService(){
-        TestEntity testEntity=new TestEntity();
-        testEntity.setUserName("wnlhdx");
-        testEntity.setIsAdmin(1);
-        testEntity.setPassWord("w1995520");
-        Mockito.when(mockitoDao.queryUser("wnlhdx")).thenReturn(testEntity);
+        LoginEntity loginEntity =new LoginEntity();
+        loginEntity.setUserName("wnlhdx");
+        loginEntity.setIsAdmin(1);
+        loginEntity.setPassWord("w1995520");
+        Mockito.when(mockitoDao.queryUser("wnlhdx")).thenReturn(loginEntity);
         ReflectionTestUtils.setField(mockitoController, "testService", mockitoService);
         String res=mockitoController.login("wnlhdx","w1995520");
         assertEquals(res,"wnlhdx");

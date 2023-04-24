@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.myproject.javase.mapper.TestMapper">
  
-    <resultMap id="BaseResultMap" type="com.myproject.springboot.entity.TestEntity">
+    <resultMap id="BaseResultMap" type="com.myproject.springboot.entity.LoginEntity">
         <result column="username" jdbcType="VARCHAR" property="userName" />
         <result column="password" jdbcType="VARCHAR" property="password" />
         <result column="role"  jdbcType="INTEGER"  property="role" />
     </resultMap>
  
-    <select id="queryUser" resultType="com.myproject.springboot.entity.TestEntity">
+    <select id="queryUser" resultType="com.myproject.springboot.entity.LoginEntity">
         select * from TestUser where username = #{userName}
     </select>
  	<update id="setPass" >
