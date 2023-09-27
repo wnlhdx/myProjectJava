@@ -19,7 +19,6 @@ public class Application {
         }else {
 
         }
-            SpringApplication.run(Application.class,args
-        );
+            SpringApplication.run(Application.class,args);
     }
 }

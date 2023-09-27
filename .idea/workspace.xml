@@ -151,29 +151,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Hadoop" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Hadoop" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="backend" type="f1a62948:ProjectNode" />
-                <item name="Hadoop" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -184,9 +162,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="package-info" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -212,7 +190,6 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\program files\apache-maven\repository" />
         <option name="mavenHome" value="$PROJECT_DIR$/../../../../program files/apache-maven" />
-        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\program files\apache-maven\conf.xml" />
       </MavenGeneralSettings>
     </option>
@@ -223,6 +200,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="24MU3kcrDFbjERN6Bas9ckIQIfU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -242,12 +222,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
     "jdk.selected.JAVA_MODULE": "openjdk",
     "last_opened_file_path": "D:/work/code/web/myProjectJava/springcloud/backend/Dubbo",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5586207",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -287,7 +268,7 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OsOpertaionTest.testOsOperation">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
       <module name="SpringBoot" />
@@ -301,18 +282,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AplicationTest.testAddService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.GameAI.WestWorld.Main" />
+      <module name="javase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.*" />
+          <option name="PATTERN" value="com.myproject.javase.GameAI.WestWorld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.AplicationTest" />
-      <option name="METHOD_NAME" value="testAddService" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -387,20 +365,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Docker 镜像" />
-      <item itemvalue="JUnit.AplicationTest.testAddService" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.AplicationTest.testLoginService" />
       <item itemvalue="JUnit.DatabaseTest.testLogin" />
       <item itemvalue="JUnit.OsOpertaionTest.testOsOperation" />
-      <item itemvalue="应用程序.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.OsOpertaionTest.testOsOperation" />
         <item itemvalue="JUnit.DatabaseTest.testLogin" />
         <item itemvalue="JUnit.AplicationTest.testLoginService" />
-        <item itemvalue="JUnit.AplicationTest.testAddService" />
-        <item itemvalue="应用程序.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -536,6 +513,15 @@
           <properties class="java.util.EmptyStackException" package="java.util" />
           <option name="timeStamp" value="63" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/myproject/springboot/Application.java</url>
+          <line>15</line>
+          <properties class="com.myproject.springboot.Application" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -555,17 +541,17 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myProjectJava$Swing.ic" NAME="Swing 覆盖结果" MODIFIED="1671222964309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.myproject.javase.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/myProjectJava$streamTest_test.ic" NAME="streamTest.test 覆盖结果" MODIFIED="1673168263937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.myproject.javase.coreJavaTest.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/myProjectJava$TestU17_search3.ic" NAME="TestU17.search3 覆盖结果" MODIFIED="1667240552220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.myproject.javastudy.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/myProjectJava$CollectionTest_testCollection.ic" NAME="CollectionTest.testCollection 覆盖结果" MODIFIED="1645405141946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.myproject.javastudy.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/myProjectJava$Swing.ic" NAME="Swing 覆盖结果" MODIFIED="1671222964309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.myproject.javase.*</FILTER>
+    <SUITE FILE_PATH="coverage/myProjectJava$TestU17_search3.ic" NAME="TestU17.search3 覆盖结果" MODIFIED="1667240552220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.myproject.javastudy.*</FILTER>
     </SUITE>
   </component>
 </project>

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.util.ReflectionTestUtils;
 
@@ -34,5 +35,6 @@ public class AplicationTest {
         ReflectionTestUtils.setField(mockitoController, "testService", mockitoService);
         String res=mockitoController.login("wnlhdx","w1995520");
         assertEquals(res,"wnlhdx");
+        
     }
 }
