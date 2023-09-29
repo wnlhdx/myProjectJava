@@ -1,12 +1,10 @@
 package com.myproject.javase;
 
-import com.myproject.javase.software.Caculate;
+import com.myproject.javase.software.Gen;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.awt.geom.Rectangle2D;
-import java.util.Arrays;
 
 /**
  * Hello world!
@@ -15,8 +13,7 @@ import java.util.Arrays;
 public class Swing
 {
 
-    public  static void main( String[] args )
-    {
+    public  static void main( String[] args ) throws Exception {
 //        JFrame frame=new JFrame();
 //        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        Container container=frame.getContentPane();
@@ -37,7 +34,7 @@ public class Swing
 //        container.add(button,1);
 //        frame.pack();
 //        frame.setVisible(true);
-        Caculate caculate=new Caculate();
+        Gen gen =new Gen();
         int number=1000;
         int scope=10;
         for(int i=0;i<args.length;i++){
@@ -48,10 +45,10 @@ public class Swing
             }else if(arg.equals("-r")){
                 i+=1;
                 scope=Integer.parseInt(args[i]);
-                Caculate.NUM_MAX=scope;
+                Gen.NUM_MAX=scope;
             }
         }
-        caculate.CaculateRes(number);
+        gen.CaculateRes(number);
     }
     static class TestG extends JComponent{
         @Override

@@ -26,13 +26,11 @@ public class Equation {
     /**
      *运算符统计，包括该层和各子表达式层的运算符数量和。用于统计是否达到运算符数量的上下限。
      **/
-    Integer countOperator;
     /**
      *层级，仅在生成完毕后运算符数量依然未达到下限时判断是否是最高层来生成低保表达式。
      **/
     List<Equation> equationList;
 
-    Integer level;
 
 
     boolean isNumber;
@@ -42,7 +40,6 @@ public class Equation {
         numList=null;
         operatorList=null;
         res=fraction;
-        countOperator=0;
         equationList = null;
     }
 
@@ -53,7 +50,6 @@ public class Equation {
         operatorList= new LinkedList<>();
         equationString=new StringBuilder();
         res=new Fraction();
-        countOperator=0;
         equationList = new ArrayList<>();
     }
 
@@ -88,28 +84,20 @@ public class Equation {
      * 补充等号和计算结果到最终生成的表达式中
      **/
     void addRes(){
-        System.out.println("生成符号"+operatorList.toString());
-        System.out.println("生成数字"+numList.toString());
-        System.out.println("算式"+equationString);
-        System.out.println("结果"+res);
-        System.out.println("层数"+level);
-        System.out.println("子表达式"+equationList);
-        System.out.println("数字"+isNumber);
         chekcRes();
         equationRes=new StringBuilder(equationString).append("=").append(res);
     }
 
     void chekcRes(){
-//        System.out.println("检验算式"+equationString);
-        CheckRes checkRes=new CheckRes(equationString.toString());
-//        if(!res.equals(checkRes.res)){
-//            System.out.println(String.format("计算结果不同 res是%s ，但实际结果是 %s ,计算式是%s",res,checkRes.res,equationString.toString()));
-//            for(int i=0;i<numList.size();i++){
-//                System.out.println("第"+i+"个数字"+numList.get(i)+"整数"+numList.get(i).getRound()+"分子"+numList.get(i).getNumerator()+"分母"+numList.get(i).getDenominator()+"真分子"+numList.get(i).getRealNumerator());
-//            }
-//            System.out.println(String.format("运算符%s ,计算数是%s",operatorList,numList));
-//            System.exit(1);
-//        }
+        Caculate caculate =new Caculate(equationString.toString());
+        if(!res.equals(caculate.res)){
+            System.out.println(String.format("计算结果不同 res是%s ，但实际结果是 %s ,计算式是%s",res, caculate.res,equationString.toString()));
+            for(int i=0;i<numList.size();i++){
+                System.out.println("第"+i+"个数字"+numList.get(i)+"整数"+numList.get(i).getRound()+"分子"+numList.get(i).getNumerator()+"分母"+numList.get(i).getDenominator()+"真分子"+numList.get(i).getRealNumerator());
+            }
+            System.out.println(String.format("运算符%s ,计算数是%s",operatorList,numList));
+            System.exit(1);
+        }
 
     }
 
