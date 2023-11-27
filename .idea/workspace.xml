@@ -369,6 +369,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.Docker 镜像" />
       <item itemvalue="JUnit.GenTest.Check" />
       <item itemvalue="JUnit.GenTest.caculate" />
       <item itemvalue="JUnit.OsOpertaionTest.testOsOperation" />
