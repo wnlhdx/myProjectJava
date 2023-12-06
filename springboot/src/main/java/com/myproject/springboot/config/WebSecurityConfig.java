@@ -1,15 +1,14 @@
 package com.myproject.springboot.config;
 
-import com.myproject.springboot.service.LoginService;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -17,48 +16,32 @@ import static org.springframework.security.config.Customizer.withDefaults;
  * @author lkxl
  */
 @Configuration
-public class WebSecurityConfig {
-    @Autowired
-    LoginService loginService;
-
-    //加密方式
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
+public class WebSecurityConfig{
     @Bean
-    AuthenticationManager authenticationManager(HttpSecurity httpSecurity) throws Exception {
-        return httpSecurity.getSharedObject(AuthenticationManagerBuilder.class)
-                .userDetailsService(loginService)
-                .passwordEncoder(passwordEncoder)
-                .and()
-                .build();
-    }
-
-    @Bean
-    public SecurityFilterChain securityFilterChain(AuthenticationManager authenticationManager, HttpSecurity httpSecurity) throws Exception {
-        httpSecurity
-                .formLogin()    //自定义登录页面
-                .loginPage("/login")    //登录页面设置
-                .loginProcessingUrl("/user/login")   //点击登录后访问的路径
-                .defaultSuccessUrl("/user").permitAll()   //登录成功后跳转路径,permitAll表示无条件进行访问
-                .and()
-                .httpBasic(withDefaults())
-                .authenticationManager(authenticationManager)
-                .authorizeHttpRequests(authorize -> {
-                    try {
-                        authorize
-                                // 放行登录接口
-                                .requestMatchers("/login").permitAll()
-                                // 放行资源目录
-                                .requestMatchers("/static/**", "/resources/**").permitAll()
-                                // 其余的都需要权限校验
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http.authorizeHttpRequests(authorizeHttpRequests->
+                        authorizeHttpRequests
+                                .requestMatchers("/login-page").permitAll()
+//                        .requestMatchers(HttpMethod.POST, "/login").permitAll()
                                 .anyRequest().authenticated()
-                                // 防跨站请求伪造
-                                .and().csrf(AbstractHttpConfigurer::disable);
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
-                });
-        return httpSecurity.build();
+        );
+        http.formLogin(formLogin->
+                formLogin
+                        .loginPage("login.html")
+                        .loginProcessingUrl("/login-page")
+                        .permitAll()
+        );
+        // 注意 6.2 版本里这里要使用 csrf.disable() 而不是 withDefault() 方法，网上很多使用 withDefault()方法的，个人实践不成功
+        http.csrf(AbstractHttpConfigurer::disable);
+        return http.build();
     }
+
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        //明文加密
+        return NoOpPasswordEncoder.getInstance();
+    }
+
+
 }
