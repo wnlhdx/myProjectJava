@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.myproject.javase.mapper.TestMapper">
+<mapper namespace="com.myproject.javase.mapper.PlanMapper">
  
-    <resultMap id="BaseResultMap" type="com.myproject.springboot.entity.LoginEntity">
-        <result column="username" jdbcType="VARCHAR" property="userName" />
-        <result column="password" jdbcType="VARCHAR" property="password" />
-        <result column="role"  jdbcType="INTEGER"  property="role" />
+    <resultMap id="PlanMap" type="com.myproject.springboot.entity.PlanEntity">
+        <result column="plan_name" jdbcType="VARCHAR" property="planName" />
+        <result column="start_time" jdbcType="VARCHAR" property="startTime" />
+        <result column="end_time"  jdbcType="VARCHAR"  property="endTIme" />
+        <result column="day_of_week"  jdbcType="VARCHAR"  property="dayOfWeek" />
+        <result column="start_time_night"  jdbcType="VARCHAR"  property="startTimeNight" />
+        <result column="end_time_night"  jdbcType="VARCHAR"  property="endTimeNight" />
+        <result column="function_for"  jdbcType="VARCHAR"  property="function" />
+        <result column="read_book"  jdbcType="VARCHAR"  property="book" />
+        <result column="read_book_pages"  jdbcType="VARCHAR"  property="pages" />
+        <result column="rest_time_app"  jdbcType="VARCHAR"  property="rest" />
     </resultMap>
- 
-    <select id="queryUser" resultType="com.myproject.springboot.entity.LoginEntity">
-        select * from TestUser where username = #{userName}
+
+
+
+    <select id="getPlanByName" resultMap="PlanResultMap">
+        SELECT * FROM `plan` WHERE plan_name = #{planName}
     </select>
- 	<update id="setPass" >
-        update TestUser set password = #{password}  where username = #{userName}
-    </update>
-    <update id="changeToAdmin" >
-        update TestUser set role = 1 where username = #{userName}
-    </update>
-    <insert id="addUser" >
-        insert into TestUser values(#{userName},#{password},0)
+
+    <insert id="insertPlan">
+        INSERT INTO `plan` (plan_name, start_time, end_time, day_of_week, start_time_night,
+        end_time_night, function_for, read_book, read_book_pages, rest_time_app)
+        VALUES (#{planName}, #{startTime}, #{endTime}, #{dayOfWeek}, #{startTimeNight},
+        #{endTimeNight}, #{function}, #{book}, #{pages}, #{rest})
     </insert>
-    <delete id='delUser'>
-    	delete from TestUser where username = #{userName}
+
+    <update id="updatePlan">
+        UPDATE `plan`
+        SET start_time = #{startTime}, end_time = #{endTime}, day_of_week = #{dayOfWeek},
+        start_time_night = #{startTimeNight}, end_time_night = #{endTimeNight},
+        function_for = #{function}, read_book = #{book}, read_book_pages = #{pages},
+        rest_time_app = #{rest}
+        WHERE plan_name = #{planName}
+    </update>
+
+    <delete id="deletePlan">
+        DELETE FROM `plan` WHERE plan_name = #{planName}
     </delete>
+
 
 </mapper>

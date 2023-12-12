@@ -12,6 +12,7 @@ spring:
       password: admin
 mybatis:
   mapper-locations: classpath:mapping/TestMapping.xml
+  type-aliases-package: com.myproject.springboot.entity
 server:
   port: 8888
 logging:
