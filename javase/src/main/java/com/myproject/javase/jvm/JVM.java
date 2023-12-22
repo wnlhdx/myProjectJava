@@ -3,5 +3,9 @@ package com.myproject.javase.jvm;
 /**
  * @author lkxl
  */
-public class JVM {
+public class SimpleJvm {
+
+  public void test() {
+    
+  }
 }

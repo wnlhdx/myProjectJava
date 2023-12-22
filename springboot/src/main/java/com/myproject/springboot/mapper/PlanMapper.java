@@ -1,16 +1,21 @@
 package com.myproject.springboot.mapper;
 
 import com.myproject.springboot.entity.PlanEntity;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.ResultMap;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author lkxl
  */
+@Mapper
 public interface PlanMapper {
 
+
+    List<PlanEntity> getAll();
     PlanEntity getPlanByName(String planName);
 
 

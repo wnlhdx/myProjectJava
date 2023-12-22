@@ -4,16 +4,26 @@ import com.myproject.springboot.entity.PlanEntity;
 import com.myproject.springboot.mapper.PlanMapper;
 import com.myproject.springboot.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author lkxl
  */
+@Service
 public class PlanServiceImpl implements PlanService {
     private final PlanMapper planMapper;
 
     @Autowired
     public PlanServiceImpl(PlanMapper planMapper) {
         this.planMapper = planMapper;
+    }
+
+    @Override
+    public List<PlanEntity> getAll() {
+        return planMapper.getAll();
     }
 
     @Override
