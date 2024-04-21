@@ -188,9 +188,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\program files\apache-maven\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../program files/apache-maven" />
-        <option name="userSettingsFile" value="D:\program files\apache-maven\conf.xml" />
+        <option name="localRepository" value="D:\software\study\develop\apache-maven\repository" />
+        <option name="mavenHome" value="D:\software\study\develop\apache-maven" />
+        <option name="userSettingsFile" value="D:\software\study\develop\apache-maven\conf.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -216,6 +216,9 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadTest.testt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadTest.testy.executor&quot;: &quot;Run&quot;,
     &quot;Maven.SpringBoot [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.SpringBoot [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.SpringBoot [org.codehaus.mojo:versions-maven-plugin:2.16.2:update-properties].executor&quot;: &quot;Run&quot;,
@@ -232,12 +235,12 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/work/code/web/myProjectJava/springboot/src/test/resources/mapping&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/software/study/develop/gradle&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;应用程序.Application.executor&quot;: &quot;Run&quot;
   }
@@ -274,33 +277,7 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
-      <module name="SpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PetApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javafx.PetApplication" />
-      <module name="JavaFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.javafx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThreadTest.testy">
     <configuration name="GenTest.Check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javase" />
       <extension name="coverage">
@@ -330,6 +307,38 @@
       <option name="METHOD_NAME" value="caculate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea -DQuestionNumber=10 -DMaxNumber=10 -DExerciseFile=Exercises.txt -DAnswerFile=Answers.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest.testt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.javase" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.ThreadTest" />
+      <option name="METHOD_NAME" value="testt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest.testy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.javase" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.ThreadTest" />
+      <option name="METHOD_NAME" value="testy" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -383,27 +392,26 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Docker 镜像" />
       <item itemvalue="JUnit.GenTest.Check" />
       <item itemvalue="JUnit.GenTest.caculate" />
+      <item itemvalue="JUnit.ThreadTest.testt" />
+      <item itemvalue="JUnit.ThreadTest.testy" />
       <item itemvalue="TestNG.PlanServiceTest.testGetPlanByName" />
-      <item itemvalue="应用程序.Application" />
-      <item itemvalue="应用程序.PetApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Application" />
+        <item itemvalue="JUnit.ThreadTest.testy" />
+        <item itemvalue="JUnit.ThreadTest.testt" />
         <item itemvalue="TestNG.PlanServiceTest.testGetPlanByName" />
         <item itemvalue="JUnit.GenTest.caculate" />
         <item itemvalue="JUnit.GenTest.Check" />
-        <item itemvalue="应用程序.PetApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-657b72ed" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -475,7 +483,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/javase/src/test/java/com/myproject/javase/ThreadTest.java</url>
-          <line>239</line>
+          <line>235</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

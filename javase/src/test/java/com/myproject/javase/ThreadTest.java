@@ -1,5 +1,7 @@
 package com.myproject.javase;
 
+import com.google.common.annotations.VisibleForTesting;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.myproject.javase.thread.*;
 
 
@@ -13,14 +15,13 @@ import java.util.concurrent.atomic.LongAccumulator;
 import java.util.concurrent.atomic.LongAdder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
-
-
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.parallel.Execution;
 
 import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+
 
 public class ThreadTest {
     private final Logger logger = Logger.getLogger("test.Test");
@@ -65,14 +66,14 @@ public class ThreadTest {
         Thread.sleep(5000);
     }
 
-   //测试生产者消费者问题
-    @Test
-    @Execution(CONCURRENT)  //多线程并发执行测试方法
-    @RepeatedTest(3)  //线程重复执行三次
-    public void testProducterConsumer() throws InterruptedException {
-        new ProductorConsumer().start();
-        Thread.sleep(10000);
-    }
+//   //测试生产者消费者问题
+//    @Test
+//    @Execution(CONCURRENT)  //多线程并发执行测试方法
+//    @RepeatedTest(3)  //线程重复执行三次
+//    public void testProducterConsumer() throws InterruptedException {
+//        new ProductorConsumer().start();
+//        Thread.sleep(10000);
+//    }
 
     //测试线程的方法
     @Test
@@ -110,11 +111,6 @@ public class ThreadTest {
         longAccumulator.accumulate(3L);
         System.out.println(longAccumulator.get());
         Thread.sleep(10000000);
-
-
-
-
-
     }
 
     @Test
@@ -313,5 +309,63 @@ public class ThreadTest {
         synchronized(this){
             System.out.println("1");
         }
+    }
+
+    @Test
+    public void testt() {
+            System.out.println(new Date());
+            ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(4,
+                    4,
+                    1000,
+                    TimeUnit.SECONDS,
+                    new LinkedBlockingQueue<>(1024),
+                    new ThreadFactoryBuilder().setNameFormat("test-pool-%d").build(),
+                    new ThreadPoolExecutor.CallerRunsPolicy());
+
+            List<Integer> list = Arrays.asList(1, 2, 3, 4);
+
+            List<String> collect = list.parallelStream().map(time -> CompletableFuture.supplyAsync(() -> {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return Collections.singletonList(time + "s");
+            }, threadPoolExecutor)).flatMap(future -> future.join().stream()).collect(Collectors.toList());
+
+            System.out.println(collect);
+            System.out.println(new Date());
+        }
+
+
+    @Test
+    public void testy() {
+        System.out.println(new Date());
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(4,
+                4,
+                1000,
+                TimeUnit.SECONDS,
+                new LinkedBlockingQueue<>(1024),
+                new ThreadFactoryBuilder().setNameFormat("test-pool-%d").build(),
+                new ThreadPoolExecutor.CallerRunsPolicy());
+
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+
+        List<CompletableFuture<String>> futures = list.stream().map(time -> CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return Collections.singletonList(time) + "s";
+        }, threadPoolExecutor)).collect(Collectors.toList());
+
+        List<String> resultList = CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]))
+                .thenApply(v -> futures.stream()
+                        .map(CompletableFuture::join)
+                        .collect(Collectors.toList()))
+                .join();
+        System.out.println(resultList);
+        System.out.println(new Date());
     }
 }
