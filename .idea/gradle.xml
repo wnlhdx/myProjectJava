@@ -11,6 +11,7 @@
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend" />
         <option name="gradleHome" value="$PROJECT_DIR$/../../../../software/study/develop/gradle" />
+        <option name="gradleJvm" value="graalvm-22" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/springcloud/backend" />
