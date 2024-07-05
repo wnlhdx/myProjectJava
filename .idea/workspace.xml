@@ -212,42 +212,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "JUnit.ThreadTest.testt.executor": "Run",
-    "JUnit.ThreadTest.testy.executor": "Run",
-    "Maven.SpringBoot [clean].executor": "Run",
-    "Maven.SpringBoot [install].executor": "Run",
-    "Maven.SpringBoot [org.codehaus.mojo:versions-maven-plugin:2.12.0:use-latest-releases].executor": "Run",
-    "Maven.SpringBoot [org.codehaus.mojo:versions-maven-plugin:2.16.2:update-properties].executor": "Run",
-    "Maven.quarkus [org.codehaus.mojo:versions-maven-plugin:2.12.0:use-latest-releases].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.PlanServiceTest.testGetPlanByName.executor": "Run",
-    "android.gradle.sync.needed": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "dart.analysis.tool.window.visible": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/software/study/develop/gradle",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5586207",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "show.migrate.to.gradle.popup": "false",
-    "应用程序.Application.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadTest.testt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ThreadTest.testy.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.testGetAllBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.testIndexAllBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.testScan.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.testSearch.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pdfScannerTest.testSpli.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpringBoot [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpringBoot [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpringBoot [org.codehaus.mojo:versions-maven-plugin:2.12.0:use-latest-releases].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpringBoot [org.codehaus.mojo:versions-maven-plugin:2.16.2:update-properties].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.quarkus [org.codehaus.mojo:versions-maven-plugin:2.12.0:use-latest-releases].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.PlanServiceTest.testGetPlanByName.executor&quot;: &quot;Run&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/software/study/develop/gradle&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5586207&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;应用程序.Application.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\code\web\myProjectJava\springboot\src\test\java\com\myproject\springboot\Selenium" />
@@ -280,67 +286,82 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AutoTest.init">
-    <configuration name="AutoTest.init" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.pdfScannerTest.testSearch">
+    <configuration name="pdfScannerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.Selenium.*" />
+          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.Selenium" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Selenium.AutoTest" />
-      <option name="METHOD_NAME" value="init" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenTest.caculate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javase" />
+    <configuration name="pdfScannerTest.testGetAllBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.javase.software.*" />
+          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.javase.software" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.software.GenTest" />
-      <option name="METHOD_NAME" value="caculate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -DQuestionNumber=10 -DMaxNumber=10 -DExerciseFile=Exercises.txt -DAnswerFile=Answers.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadTest.testt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.javase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.javase" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.ThreadTest" />
-      <option name="METHOD_NAME" value="testt" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
+      <option name="METHOD_NAME" value="testGetAllBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadTest.testy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javase" />
+    <configuration name="pdfScannerTest.testIndexAllBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.javase.*" />
+          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.javase" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.ThreadTest" />
-      <option name="METHOD_NAME" value="testy" />
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
+      <option name="METHOD_NAME" value="testIndexAllBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pdfScannerTest.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
+      <option name="METHOD_NAME" value="testSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pdfScannerTest.testSpli" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
+      <option name="METHOD_NAME" value="testSpli" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -359,33 +380,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanServiceTest.testGetPlanByName" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot" />
-      <shortenClasspath name="NONE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.APITest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
-      <option name="METHOD_NAME" value="testGetPlanByName" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Docker 镜像" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -395,19 +389,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AutoTest.init" />
-      <item itemvalue="JUnit.GenTest.caculate" />
-      <item itemvalue="JUnit.ThreadTest.testt" />
-      <item itemvalue="JUnit.ThreadTest.testy" />
-      <item itemvalue="TestNG.PlanServiceTest.testGetPlanByName" />
+      <item itemvalue="JUnit.pdfScannerTest.testGetAllBook" />
+      <item itemvalue="JUnit.pdfScannerTest.testIndexAllBook" />
+      <item itemvalue="JUnit.pdfScannerTest.testSearch" />
+      <item itemvalue="JUnit.pdfScannerTest.testSpli" />
+      <item itemvalue="JUnit.pdfScannerTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AutoTest.init" />
-        <item itemvalue="JUnit.ThreadTest.testy" />
-        <item itemvalue="JUnit.ThreadTest.testt" />
-        <item itemvalue="TestNG.PlanServiceTest.testGetPlanByName" />
-        <item itemvalue="JUnit.GenTest.caculate" />
+        <item itemvalue="JUnit.pdfScannerTest.testSearch" />
+        <item itemvalue="JUnit.pdfScannerTest.testIndexAllBook" />
+        <item itemvalue="JUnit.pdfScannerTest.testSpli" />
+        <item itemvalue="JUnit.pdfScannerTest.test" />
+        <item itemvalue="JUnit.pdfScannerTest.testGetAllBook" />
       </list>
     </recent_temporary>
   </component>
@@ -554,6 +548,11 @@
           <url>jar://$PROJECT_DIR$/../../../../program files/apache-maven/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar!/org/apache/catalina/core/ApplicationFilterChain.class</url>
           <line>76</line>
           <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/myproject/springboot/tools/Spliter.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="133" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IllegalThreadStateException" package="java.lang" />
