@@ -6,12 +6,11 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/istlo" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../soft/gradle-8.9" />
         <option name="gradleJvm" value="21 (2)" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud/backend" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../soft/gradle-8.9" />
         <option name="gradleJvm" value="21" />
         <option name="modules">
           <set>
@@ -32,5 +31,6 @@
         </option>
       </GradleProjectSettings>
     </option>
+    <option name="parallelModelFetch" value="true" />
   </component>
 </project>

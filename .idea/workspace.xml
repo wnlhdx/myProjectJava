@@ -188,10 +188,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="D:\soft\apache-maven-3.9.8" />
-        <option name="localRepository" value="D:\soft\apache-maven-3.9.8\repository" />
+        <option name="customMavenHome" value="D:\soft\maven" />
+        <option name="localRepository" value="D:\soft\maven\repository" />
         <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
-        <option name="userSettingsFile" value="D:\soft\apache-maven-3.9.8\conf\settings.xml" />
+        <option name="userSettingsFile" value="D:\soft\maven\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -245,12 +245,12 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/soft/gradle-8.9",
+    "last_opened_file_path": "D:/soft/gradle/bin",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5586207",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "show.migrate.to.gradle.popup": "false",
     "应用程序.Application.executor": "Run"
   }

@@ -164,6 +164,20 @@
 		  <scope>provided</scope>
 	  </dependency>
 
+	  <!-- PostgreSQL 驱动 -->
+	  <dependency>
+		  <groupId>org.postgresql</groupId>
+		  <artifactId>postgresql</artifactId>
+		  <scope>runtime</scope>
+	  </dependency>
+
+	  <!-- SQLite 驱动 -->
+	  <dependency>
+		  <groupId>org.xerial</groupId>
+		  <artifactId>sqlite-jdbc</artifactId>
+		  <scope>runtime</scope>
+	  </dependency>
+
 
 
 

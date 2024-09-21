@@ -8,16 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaFX" />
-        <module name="javase" />
-        <module name="SpringBoot" />
+        <module name="untitled" />
         <module name="jakartaee" />
         <module name="quarkus" />
+        <module name="javase" />
+        <module name="SpringBoot" />
         <module name="jarkataee" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="untitled" target="21" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

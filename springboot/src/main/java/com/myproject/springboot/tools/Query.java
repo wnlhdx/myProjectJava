@@ -33,7 +33,7 @@ public class Query {
         reader = DirectoryReader.open(index);
         searcher= new IndexSearcher(reader);
         queryContent = new QueryParser("content",searchanalyzer);
-        queryPath = new QueryParser("fullpath",searchanalyzer);
+        queryPath = new QueryParser("fullPath",searchanalyzer);
     }
 
 
@@ -51,8 +51,8 @@ public class Query {
         ScoreDoc[] hits = searcher.search(query,1000).scoreDocs;
         // 输出搜索结果
         for (ScoreDoc hit : hits) {
-            Document hitDoc = searcher.doc(hit.doc);
-            res.add(hitDoc.toString());
+            Document hitDoc = searcher.storedFields().document(hit.doc);
+            res.add(hitDoc.get("fullPath"));
         }
         return res;
         // 关闭资源
