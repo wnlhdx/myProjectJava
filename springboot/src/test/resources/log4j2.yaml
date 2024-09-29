@@ -1,4 +1,4 @@
-Configuration:
+onfiguration:
   status: info
   Properties: # 定义全局变量
     Property: # 缺省配置（用于开发环境）。其他环境需要在VM参数中指定，如下：

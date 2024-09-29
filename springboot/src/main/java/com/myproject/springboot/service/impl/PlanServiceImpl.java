@@ -1,9 +1,10 @@
 package com.myproject.springboot.service.impl;
 
 import com.myproject.springboot.entity.PlanEntity;
-import com.myproject.springboot.mapper.PlanMapper;
+import com.myproject.springboot.mapper.PlanRepository;
 import com.myproject.springboot.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,35 +15,36 @@ import java.util.List;
  */
 @Service
 public class PlanServiceImpl implements PlanService {
-    private final PlanMapper planMapper;
+    @Autowired
+    private PlanRepository planMapper;
 
     @Autowired
-    public PlanServiceImpl(PlanMapper planMapper) {
+    public PlanServiceImpl(PlanRepository planMapper) {
         this.planMapper = planMapper;
     }
 
     @Override
     public List<PlanEntity> getAll() {
-        return planMapper.getAll();
+        return planMapper.findAll();
     }
 
     @Override
     public PlanEntity getPlanByName(String planName) {
-        return planMapper.getPlanByName(planName);
+        return planMapper.findByPlanName(planName);
     }
 
     @Override
     public void addPlan(PlanEntity plan) {
-        planMapper.insertPlan(plan);
+        planMapper.save(plan);
     }
 
     @Override
     public void updatePlan(PlanEntity plan) {
-        planMapper.updatePlan(plan);
+        planMapper.save(plan);
     }
 
     @Override
     public void deletePlan(String planName) {
-        planMapper.deletePlan(planName);
+        planMapper.deleteByPlanName(planName);
     }
 }

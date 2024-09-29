@@ -54,13 +54,13 @@ CREATE TABLE files (
 DROP TABLE IF EXISTS "plans";
 CREATE TABLE plans (
   "plan_name" text,
-  "time_start" integer,
-  "time_end" integer,
+  "time_start" text,
+  "time_end" text,
   "plan_details" text,
   "project_name" text,
   "project_details" text,
-  "night_time_start" integer,
-  "night_time_end" integer,
+  "night_time_start" text,
+  "night_time_end" text,
   "project_finish_percent" text,
   "day_of_week" integer,
   "book_name" text,
