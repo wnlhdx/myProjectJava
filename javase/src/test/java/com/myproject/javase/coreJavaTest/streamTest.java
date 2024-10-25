@@ -61,7 +61,7 @@ public class streamTest {
         String nullstr=nu.orElseThrow(RuntimeException::new);
         logger.info(String.valueOf(opt.isPresent()));
         Optional<String> opt2=Optional.of("Str").map(String::toUpperCase);
-        logger.info(String.valueOf(opt2.isPresent()));
+        logger.info(String.valueOf(nu.isEmpty()));
 //        Executors.newVirtualThreadPerTaskExecutor();
 //        Thread.ofVirtual().start();
 //        Thread.startVirtualThread();
