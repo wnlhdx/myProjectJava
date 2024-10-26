@@ -259,7 +259,9 @@
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
-    "应用程序.Application.executor": "Run"
+    "应用程序.Application.executor": "Run",
+    "应用程序.SimpleDBMS.executor": "Run",
+    "应用程序.SimpleDBMSWithSQL.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -294,7 +296,7 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.streamTest.testStream">
+  <component name="RunManager" selected="应用程序.SimpleDBMSWithSQL">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
       <module name="SpringBoot" />
@@ -308,17 +310,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlanServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot" />
+    <configuration name="SimpleDBMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.sql.SimpleDBMS" />
+      <module name="javase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.APITest.*" />
+          <option name="PATTERN" value="com.myproject.javase.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleDBMSWithSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.sql.SimpleDBMSWithSQL" />
+      <module name="javase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.javase.sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -334,22 +347,6 @@
       <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
       <option name="METHOD_NAME" value="testGetAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pdfScannerTest.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.springboot.Lucene.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.springboot.Lucene" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Lucene.pdfScannerTest" />
-      <option name="METHOD_NAME" value="testSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -394,18 +391,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.streamTest.testStream" />
-      <item itemvalue="JUnit.PlanServiceTest" />
       <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
-      <item itemvalue="JUnit.pdfScannerTest.testSearch" />
+      <item itemvalue="应用程序.SimpleDBMS" />
+      <item itemvalue="应用程序.SimpleDBMSWithSQL" />
       <item itemvalue="应用程序.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.SimpleDBMSWithSQL" />
+        <item itemvalue="应用程序.SimpleDBMS" />
         <item itemvalue="JUnit.streamTest.testStream" />
         <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
-        <item itemvalue="JUnit.PlanServiceTest" />
-        <item itemvalue="JUnit.pdfScannerTest.testSearch" />
       </list>
     </recent_temporary>
   </component>
