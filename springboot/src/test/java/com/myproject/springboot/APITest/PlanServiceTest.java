@@ -121,7 +121,7 @@ public class PlanServiceTest{
         planService.deletePlan("Test Plan");
 
         // 验证是否调用了删除方法
-        verify(planMapper, times(1)).deletePlan("Test Plan"); // 假设您有这样的方法
+        verify(planMapper, times(1)).deleteByPlanName("Test Plan"); // 假设您有这样的方法
     }
 
     @AfterAll
