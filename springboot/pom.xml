@@ -219,6 +219,9 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
+				<includes>
+                    <include>**/*.yaml</include> <!-- 只过滤 .yaml 文件 -->
+                </includes>
 				<filtering>true</filtering>
 			</resource>
 		</resources>
