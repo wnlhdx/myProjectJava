@@ -4,6 +4,12 @@ spring:
     username: wnlhdx
     password: w1995520
     driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: POSTGRESQL
+
 #      url: jdbc:sqlite:../../Others/database/sqlite/base.db
 #      driver-class-name: org.sqlite.JDBC
 #  jpa:

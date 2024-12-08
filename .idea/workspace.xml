@@ -221,6 +221,7 @@
     "Gradle.构建 backend.executor": "Run",
     "JUnit.LibreTranslateTest.testTranslate.executor": "Run",
     "JUnit.PlanServiceTest.executor": "Run",
+    "JUnit.PlanServiceTest.testDeletePlan.executor": "Run",
     "JUnit.PlanServiceTest.testGetAll.executor": "Run",
     "JUnit.ThreadTest.testt.executor": "Run",
     "JUnit.ThreadTest.testy.executor": "Run",
@@ -236,6 +237,7 @@
     "Maven.SpringBoot [clean].executor": "Run",
     "Maven.SpringBoot [install].executor": "Run",
     "Maven.SpringBoot [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
+    "Maven.SpringBoot [org.apache.maven.plugins:maven-clean-plugin:3.4.0:clean].executor": "Run",
     "Maven.SpringBoot [org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile].executor": "Run",
     "Maven.SpringBoot [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
     "Maven.SpringBoot [org.apache.maven.plugins:maven-install-plugin:3.1.3:help].executor": "Run",
@@ -302,13 +304,13 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TranslateToolsTest.testTranslateByRange">
-    <configuration name="SimpleDBMS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.sql.SimpleDBMS" />
-      <module name="javase" />
+  <component name="RunManager" selected="应用程序.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
+      <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.javase.sql.*" />
+          <option name="PATTERN" value="com.myproject.springboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -316,15 +318,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDBMSWithSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.sql.SimpleDBMSWithSQL" />
-      <module name="javase" />
+    <configuration name="PlanServiceTest.testDeletePlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myproject.javase.sql.*" />
+          <option name="PATTERN" value="com.myproject.springboot.APITest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
+      <option name="METHOD_NAME" value="testDeletePlan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlanServiceTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myproject.springboot.APITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
+      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -361,22 +382,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="streamTest.testStream" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javase" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myproject.javase.coreJavaTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myproject.javase.coreJavaTest" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.javase.coreJavaTest.streamTest" />
-      <option name="METHOD_NAME" value="testStream" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="javase" />
       <method v="2">
@@ -399,19 +404,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
+      <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
       <item itemvalue="JUnit.TranslateToolsTest.testTranslate" />
       <item itemvalue="JUnit.TranslateToolsTest.testTranslateByRange" />
-      <item itemvalue="JUnit.streamTest.testStream" />
-      <item itemvalue="应用程序.SimpleDBMS" />
-      <item itemvalue="应用程序.SimpleDBMSWithSQL" />
+      <item itemvalue="应用程序.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Application" />
+        <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
+        <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
         <item itemvalue="JUnit.TranslateToolsTest.testTranslateByRange" />
         <item itemvalue="JUnit.TranslateToolsTest.testTranslate" />
-        <item itemvalue="应用程序.SimpleDBMSWithSQL" />
-        <item itemvalue="应用程序.SimpleDBMS" />
-        <item itemvalue="JUnit.streamTest.testStream" />
       </list>
     </recent_temporary>
   </component>

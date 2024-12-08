@@ -2,7 +2,6 @@ package com.myproject.springboot.entity;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
 
 
 @Entity

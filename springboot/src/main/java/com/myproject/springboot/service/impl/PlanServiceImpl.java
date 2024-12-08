@@ -4,10 +4,8 @@ import com.myproject.springboot.entity.PlanEntity;
 import com.myproject.springboot.mapper.PlanRepository;
 import com.myproject.springboot.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
