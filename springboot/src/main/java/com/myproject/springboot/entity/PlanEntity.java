@@ -243,6 +243,14 @@ public class PlanEntity {
         this.updateTime = updateTime;
     }
 
+    public String getBookPage() {
+        return bookPage;
+    }
+
+    public void setBookPage(String bookPage) {
+        this.bookPage = bookPage;
+    }
+
 
     // Getters and Setters
     // ...

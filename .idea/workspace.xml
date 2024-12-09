@@ -223,6 +223,7 @@
     "JUnit.PlanServiceTest.executor": "Run",
     "JUnit.PlanServiceTest.testDeletePlan.executor": "Run",
     "JUnit.PlanServiceTest.testGetAll.executor": "Run",
+    "JUnit.PlanServiceTest.testGetPlanByName.executor": "Run",
     "JUnit.ThreadTest.testt.executor": "Run",
     "JUnit.ThreadTest.testy.executor": "Run",
     "JUnit.TranslateToolsTest.testTranslate.executor": "Run",
@@ -304,7 +305,7 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Application">
+  <component name="RunManager" selected="JUnit.PlanServiceTest.testDeletePlan">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
       <module name="SpringBoot" />
@@ -350,7 +351,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TranslateToolsTest.testTranslate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlanServiceTest.testGetPlanByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringBoot" />
       <extension name="coverage">
         <pattern>
@@ -359,8 +360,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myproject.springboot.APITest" />
-      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.TranslateToolsTest" />
-      <option name="METHOD_NAME" value="testTranslate" />
+      <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.APITest.PlanServiceTest" />
+      <option name="METHOD_NAME" value="testGetPlanByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -404,19 +405,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.PlanServiceTest.testGetPlanByName" />
       <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
       <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
-      <item itemvalue="JUnit.TranslateToolsTest.testTranslate" />
       <item itemvalue="JUnit.TranslateToolsTest.testTranslateByRange" />
       <item itemvalue="应用程序.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Application" />
-        <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
         <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
+        <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
+        <item itemvalue="JUnit.PlanServiceTest.testGetPlanByName" />
+        <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.TranslateToolsTest.testTranslateByRange" />
-        <item itemvalue="JUnit.TranslateToolsTest.testTranslate" />
       </list>
     </recent_temporary>
   </component>
