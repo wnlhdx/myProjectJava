@@ -72,6 +72,9 @@ public class PlanEntity {
     @Column(name = "update_time")
     private String updateTime;
 
+    @Column(name = "book_page")
+    private String bookPage;
+
     public String getPlanName() {
         return planName;
     }
