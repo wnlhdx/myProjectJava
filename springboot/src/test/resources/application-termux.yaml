@@ -57,5 +57,6 @@ spring:
     listener:
       simple:
         acknowledge-mode=manual: manual
+
 server:
   port: 8080

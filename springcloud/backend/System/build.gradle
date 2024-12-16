@@ -1,6 +1,0 @@
-dependencies {
-    implementation('org.springframework.cloud:spring-cloud-starter-bootstrap:4.0.1')
-    implementation('org.springframework.cloud:spring-cloud-starter-openfeign:4.0.1')
-    implementation('org.springframework.cloud:spring-cloud-starter-security:2.2.5.RELEASE')
-    implementation('org.springframework.cloud:spring-cloud-starter-oauth2:2.2.5.RELEASE')
-}

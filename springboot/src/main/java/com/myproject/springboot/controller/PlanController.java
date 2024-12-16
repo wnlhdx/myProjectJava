@@ -37,6 +37,16 @@ public class PlanController {
         return ResponseEntity.ok(plan);
     }
 
+    @GetMapping("/getPlanNow")
+    public ResponseEntity<PlanEntity> getPlanNow() {
+        PlanEntity plan = planService.getPlansBasedOnTime();
+        if (plan == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(plan);
+    }
+
+
     @PostMapping("/add")
   //  @Operation(summary = "添加计划", description = "添加计划")
     public ResponseEntity<String> addPlan(@RequestBody PlanEntity plan) {

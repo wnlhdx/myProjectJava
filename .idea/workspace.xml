@@ -261,7 +261,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/soft/gradle/bin",
+    "last_opened_file_path": "D:/work/code/myProjectJava/springboot/src/test/resources",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5586207",
@@ -275,11 +275,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\code\myProjectJava\springboot\src\test\resources" />
       <recent name="D:\work\code\web\myProjectJava\springboot\src\test\java\com\myproject\springboot\Selenium" />
       <recent name="D:\work\code\web\myProjectJava\springboot\src\test\resources\mapping" />
       <recent name="D:\work\code\web\myProjectJava\javafx\src\main\resources\com\myproject\javafx" />
       <recent name="D:\work\code\web\myProjectJava\javafx\src\main\java\com\myproject\javafx" />
-      <recent name="D:\work\code\web\myProjectJava\springboot\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\code\web\myProjectJava\javafx\src\main\resources\com\myproject\javafx" />
@@ -305,10 +305,11 @@
       <recent name="com.myproject.dubbo.consumer.interFace" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlanServiceTest.testDeletePlan">
+  <component name="RunManager" selected="应用程序.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myproject.springboot.Application" />
       <module name="SpringBoot" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=windows" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.myproject.springboot.*" />
@@ -405,6 +406,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.desktop" />
       <item itemvalue="JUnit.PlanServiceTest.testGetPlanByName" />
       <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
       <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
@@ -413,10 +415,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
         <item itemvalue="JUnit.PlanServiceTest.testGetAll" />
         <item itemvalue="JUnit.PlanServiceTest.testGetPlanByName" />
-        <item itemvalue="应用程序.Application" />
         <item itemvalue="JUnit.TranslateToolsTest.testTranslateByRange" />
       </list>
     </recent_temporary>
@@ -578,6 +580,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.apache.ibatis.binding.BindingException" package="org.apache.ibatis.binding" />
           <option name="timeStamp" value="122" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.query.sqm.UnknownEntityException" package="org.hibernate.query.sqm" />
+          <option name="timeStamp" value="135" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,6 +10,7 @@ import java.util.List;
 public interface PlanService {
     List<PlanEntity> getAll();
     PlanEntity getPlanByName(String planName);
+    PlanEntity getPlansBasedOnTime();
     void addPlan(PlanEntity plan);
     void updatePlan(PlanEntity plan);
     void deletePlan(String planName);

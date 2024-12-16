@@ -1,5 +1,6 @@
 package com.myproject.javase.coreJavaTest;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigInteger;
@@ -16,57 +17,100 @@ import java.util.stream.Stream;
  * @author lkxl
  */
 public class streamTest {
-    private final Logger logger = Logger.getLogger("StreamTest");
     @Test
-    public void testStream(){
-        List<String> arraylist=new ArrayList<>();
-        arraylist.add("test1");
-        arraylist.add("test2");
-        arraylist.add("te");
-        long count=arraylist.parallelStream().filter(w->w.length()>3).count();
-        logger.info("tests"+String.valueOf(count));
-        Stream<String> stream=arraylist.stream();
-        stream=Stream.of("a","b","c","d");
-        stream=Stream.empty();
-        stream=Stream.generate(()->"test");
-        Stream<BigInteger> stream2=Stream.iterate(BigInteger.ZERO,n->n.compareTo(BigInteger.ZERO)>0, n->n.add(BigInteger.ONE));
-        stream=Stream.ofNullable("");
-        stream=Stream.of("a","b","c","d");
-        stream=stream.map(String::toUpperCase);
-        stream=stream.limit(3);
-        stream=stream.skip(1);
-        stream=stream.takeWhile(n->n.charAt(0)>='B');
-        stream=stream.dropWhile(n->n.charAt(0)<'C');
-        stream.forEach(n->logger.info("test1"+n));
-        stream=Stream.of("a","b","c","d");
-        Stream<Stream<String>> stream3=Stream.of(Stream.of("a","b","c","d"),Stream.of("a","b","c","d"),Stream.of("a","b","c","d"));
-        stream=stream3.flatMap(n->n.map(String::toUpperCase));
-        stream.forEach(n->logger.info("test2"+n));
-        stream=Stream.of("d","c","b","c");
-        stream=stream.distinct();
-        stream=stream.sorted();
-        stream=stream.peek(n->logger.info("peek"+n));
-        logger.info("count"+stream.count());
-        logger.info("max"+stream.max(String::compareTo));
-        logger.info("min"+stream.min(String::compareTo));
-        logger.info("first"+stream.findFirst());
-        logger.info("any"+stream.parallel().findAny());
-        logger.info("anyM"+stream.anyMatch(n->n.charAt(0)=='C'));
-        logger.info("allM"+stream.allMatch(n->n.length()==1));
-        logger.info("noneM"+stream.noneMatch(n->n.length()>1));
-        Optional<String> opt=Optional.of("Str");
-        Optional<String> nu=Optional.empty();
-        String notnull=nu.orElse("empty");
-        String notnull2=nu.orElseGet(()->"isEmpty");
-        String nullstr=nu.orElseThrow(RuntimeException::new);
-        logger.info(String.valueOf(opt.isPresent()));
-        Optional<String> opt2=Optional.of("Str").map(String::toUpperCase);
-        logger.info(String.valueOf(nu.isEmpty()));
-//        Executors.newVirtualThreadPerTaskExecutor();
-//        Thread.ofVirtual().start();
-//        Thread.startVirtualThread();
-//        Executors.newThreadPerTaskExecutor(Thread.ofVirtual().factory().newThread());
+    public void testFilterAndCount() {
+        List<String> arraylist = List.of("test1", "test2", "te");
+        long count = arraylist.parallelStream().filter(w -> w.length() > 3).count();
+        Assertions.assertEquals(2, count);
     }
+
+    @Test
+    public void testMapAndForEach() {
+        List<String> arraylist = List.of("a", "b", "c", "d");
+        List<String> upperCaseList = arraylist.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
+        Assertions.assertEquals(List.of("A", "B", "C", "D"), upperCaseList);
+    }
+
+    @Test
+    public void testLimitAndSkip() {
+        List<String> arraylist = List.of("a", "b", "c", "d");
+        List<String> limitedSkippedList = arraylist.stream()
+                .skip(1)
+                .limit(2)
+                .collect(Collectors.toList());
+        Assertions.assertEquals(List.of("b", "c"), limitedSkippedList);
+    }
+
+    @Test
+    public void testTakeWhileAndDropWhile() {
+        List<String> arraylist = List.of("a", "b", "c", "d");
+        List<String> takenList = arraylist.stream()
+                .takeWhile(n -> n.charAt(0) < 'c')
+                .collect(Collectors.toList());
+        List<String> droppedList = arraylist.stream()
+                .dropWhile(n -> n.charAt(0) < 'c')
+                .collect(Collectors.toList());
+        Assertions.assertEquals(List.of("a", "b"), takenList);
+        Assertions.assertEquals(List.of("c", "d"), droppedList);
+    }
+
+    @Test
+    public void testDistinctAndSorted() {
+        List<String> arraylist = List.of("d", "c", "b", "c");
+        List<String> distinctSortedList = arraylist.stream()
+                .distinct()
+                .sorted()
+                .collect(Collectors.toList());
+        Assertions.assertEquals(List.of("b", "c", "d"), distinctSortedList);
+    }
+
+    @Test
+    public void testPeek() {
+        List<String> arraylist = List.of("a", "b", "c", "d");
+        // 这里只是演示peek的使用，实际上不应该在测试中打印日志
+        arraylist.stream().peek(System.out::println).collect(Collectors.toList());
+    }
+
+    @Test
+    public void testMinMaxAndFind() {
+        List<String> arraylist = List.of("d", "c", "b", "a");
+        Optional<String> max = arraylist.stream().max(String::compareTo);
+        Optional<String> min = arraylist.stream().min(String::compareTo);
+        Optional<String> first = arraylist.stream().findFirst();
+        Optional<String> any = arraylist.parallelStream().findAny();
+        Assertions.assertEquals("d", max.get());
+        Assertions.assertEquals("a", min.get());
+        Assertions.assertEquals("d", first.get());
+        Assertions.assertTrue(arraylist.contains(any.get()));
+    }
+
+    @Test
+    public void testMatch() {
+        List<String> arraylist = List.of("a", "b", "c", "d");
+        boolean anyMatch = arraylist.stream().anyMatch(n -> n.charAt(0) == 'c');
+        boolean allMatch = arraylist.stream().allMatch(n -> n.length() == 1);
+        boolean noneMatch = arraylist.stream().noneMatch(n -> n.length() > 1);
+        Assertions.assertTrue(anyMatch);
+        Assertions.assertTrue(allMatch);
+        Assertions.assertTrue(noneMatch);
+    }
+
+    @Test
+    public void testOptional() {
+        Optional<String> opt = Optional.of("Str");
+        Optional<String> nu = Optional.empty();
+        String notNull = nu.orElse("empty");
+        String notNull2 = nu.orElseGet(() -> "isEmpty");
+        Assertions.assertThrows(RuntimeException.class, () -> nu.orElseThrow(RuntimeException::new));
+        Assertions.assertTrue(opt.isPresent());
+        Assertions.assertFalse(nu.isPresent());
+        Assertions.assertEquals("STR", opt.map(String::toUpperCase).get());
+        Assertions.assertEquals("empty", notNull);
+        Assertions.assertEquals("isEmpty", notNull2);
+    }
+
 
 
 }

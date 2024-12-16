@@ -1,9 +1,0 @@
-server:
-  port: 8012
-spring:
-  application:
-    name: SentinelTest
-  cloud:
-    sentinel:
-      transport:
-        dashboard: 127.0.0.1:9871

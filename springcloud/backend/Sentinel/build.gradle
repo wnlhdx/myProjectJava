@@ -1,5 +1,0 @@
-dependencies {
-    implementation('com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:2022.0.0.0-RC1')
-    implementation('com.alibaba.csp:sentinel-transport-simple-http:2.0.0-alpha')
-    implementation('com.alibaba.csp:sentinel-core:2.0.0-alpha')
-}
