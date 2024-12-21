@@ -9,9 +9,8 @@ public class OS {
         String osArch = System.getProperty("os.arch");
         String osName = System.getProperty("os.name").toLowerCase();
 
-
         if (osName.contains("windows")) {
-            if (osArch.contains("86")) {
+            if (osArch.contains("amd")) {
                 osname = "windows";
             } else {
                 osname = "?";
