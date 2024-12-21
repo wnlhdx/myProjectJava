@@ -56,5 +56,21 @@ spring:
     listener:
       simple:
         acknowledge-mode=manual: manual
+  quartz:
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: MyScheduler
+            instanceId: AUTO
+        jobStore:
+          class: org.quartz.impl.jdbcjobstore.JobStoreTX
+          driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+          tablePrefix: QRTZ_
+          isClustered: true
+        threadPool:
+          class: org.quartz.simpl.SimpleThreadPool
+          threadCount: 10
 server:
   port: 8080

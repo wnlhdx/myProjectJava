@@ -60,9 +60,9 @@ public class SimpleDBMSWithSQL extends SimpleDBMS {
         // 添加删除逻辑，选择并删除记录
     }
 
-    public static void main(String[] args) {
-        SimpleDBMSWithSQL dbms = new SimpleDBMSWithSQL();
-        dbms.executeSQL("SELECT * FROM SimpleTable");
-        dbms.executeSQL("INSERT INTO SimpleTable (name) VALUES ('Alice')");
-    }
+//    public static void main(String[] args) {
+//        SimpleDBMSWithSQL dbms = new SimpleDBMSWithSQL();
+//        dbms.executeSQL("SELECT * FROM SimpleTable");
+//        dbms.executeSQL("INSERT INTO SimpleTable (name) VALUES ('Alice')");
+//    }
 }

@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories("com.myproject.springboot.mapper")
-@EnableRabbit
+//@EnableRabbit
 public class Application {
     public static void main(String[] args) {
             SpringApplication.run(Application.class,args);
