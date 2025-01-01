@@ -5,6 +5,7 @@ import com.myproject.springboot.mapper.BookRepository;
 import com.myproject.springboot.mapper.DataDownloadRepository;
 import com.myproject.springboot.service.DataDownloadService;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 @Service
 public class DataDownloadServiceImpl implements DataDownloadService {
@@ -16,7 +17,7 @@ public class DataDownloadServiceImpl implements DataDownloadService {
     }
 
     @Override
-    public DataDownloadEntity findByDataName(String dataName) {
+    public Mono<DataDownloadEntity> findByDataName(String dataName) {
         return null;
     }
 

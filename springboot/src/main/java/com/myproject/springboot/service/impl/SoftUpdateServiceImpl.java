@@ -4,6 +4,7 @@ import com.myproject.springboot.mapper.FileManageRepository;
 import com.myproject.springboot.mapper.SoftUpdateRepository;
 import com.myproject.springboot.service.SoftUpdateService;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 @Service
 public class SoftUpdateServiceImpl implements SoftUpdateService {
@@ -17,12 +18,12 @@ public class SoftUpdateServiceImpl implements SoftUpdateService {
 
 
     @Override
-    public SoftUpdateRepository findBySoftName(String SoftName) {
+    public Mono<SoftUpdateRepository> findBySoftName(String SoftName) {
         return null;
     }
 
     @Override
-    public void deleteBySoftName(String SoftName) {
-
+    public Mono<Void> deleteBySoftName(String SoftName) {
+            return null;
     }
 }

@@ -5,6 +5,8 @@ import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class DirectoryScanner {
 
@@ -40,4 +42,26 @@ public class DirectoryScanner {
 
         return fileList;
     }
+
+
+    public Map<String, List<FileInfo>> groupFilesByExtension(List<FileInfo> fileList) {
+        // Using Collectors.groupingBy to collect files into a Map grouped by extension
+        return fileList.stream()
+                .collect(Collectors.groupingBy(FileInfo::getExtension));
+    }
+
+    // Function to collect file information into a Map (grouped by file size)
+    public Map<Long, List<FileInfo>> groupFilesBySize(List<FileInfo> fileList) {
+        // Using Collectors.groupingBy to collect files into a Map grouped by file size
+        return fileList.stream()
+                .collect(Collectors.groupingBy(FileInfo::getSize));
+    }
+
+    // Function to count the number of files by extension
+    public Map<String, Long> countFilesByExtension(List<FileInfo> fileList) {
+        // Using Collectors.groupingBy and Collectors.counting to count files by extension
+        return fileList.stream()
+                .collect(Collectors.groupingBy(FileInfo::getExtension, Collectors.counting()));
+    }
+
 }

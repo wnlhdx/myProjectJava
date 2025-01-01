@@ -62,11 +62,6 @@
 			<artifactId>jsch</artifactId>
 			<version>0.2.21</version>
 		</dependency>
-
-		<dependency>
-  		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-  	</dependency>
 	<dependency>
 	  <groupId>org.springframework.boot</groupId>
 	  <artifactId>spring-boot-devtools</artifactId>
@@ -183,27 +178,44 @@
 			</dependency>
 
 		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis-reactive -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis-reactive</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-quartz</artifactId>
 		</dependency>
-<!--	  <dependency>-->
-<!--		  <groupId>org.springframework.boot</groupId>-->
-<!--		  <artifactId>spring-boot-starter-webflux</artifactId>-->
-<!--	  </dependency>-->
-<!--	  <dependency>-->
-<!--		  <groupId>org.springframework.boot</groupId>-->
-<!--		  <artifactId>spring-boot-starter-data-r2dbc</artifactId>-->
-<!--	  </dependency>-->
-<!--	  <dependency>-->
-<!--		  <groupId>io.r2dbc</groupId>-->
-<!--		  <artifactId>r2dbc-h2</artifactId>-->
-<!--		  <scope>runtime</scope>-->
-<!--	  </dependency>-->
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-webflux</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-data-r2dbc</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>io.r2dbc</groupId>
+		  <artifactId>r2dbc-h2</artifactId>
+		  <scope>runtime</scope>
+	  </dependency>
 	  <dependency>
 		  <groupId>space.dynomake</groupId>
 		  <artifactId>libretranslate-java</artifactId>
 		  <version>1.0.9</version>
 	  </dependency>
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-test</artifactId>
+			<version>3.7.1</version>
+			<scope>test</scope>
+		</dependency>
 	  <dependency>
 		  <groupId>org.bytedeco</groupId>
 		  <artifactId>javacv</artifactId>
@@ -216,12 +228,12 @@
 	  </dependency>
 
 	  <!-- PostgreSQL 驱动 -->
-	  <dependency>
-		  <groupId>org.postgresql</groupId>
-		  <artifactId>postgresql</artifactId>
-		  <scope>runtime</scope>
-		  <version>42.7.4</version>
-	  </dependency>
+<!--	  <dependency>-->
+<!--		  <groupId>org.postgresql</groupId>-->
+<!--		  <artifactId>postgresql</artifactId>-->
+<!--		  <scope>runtime</scope>-->
+<!--		  <version>42.7.4</version>-->
+<!--	  </dependency>-->
 
 	  <!-- SQLite 驱动 -->
 <!--	  <dependency>-->

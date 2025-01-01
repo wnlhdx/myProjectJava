@@ -1,11 +1,13 @@
 package com.myproject.springboot.service;
 
 import com.myproject.springboot.entity.FileManageEntity;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
 public interface FileManageService {
-    List<FileManageEntity> findAll();
-    FileManageEntity findByFileName(String fileName);
-    void deleteByFileName(String fileName);
+    Flux<FileManageEntity> findAll();
+    Mono<FileManageEntity> findByFileName(String fileName);
+    Mono<Void> deleteByFileName(String fileName);
 }

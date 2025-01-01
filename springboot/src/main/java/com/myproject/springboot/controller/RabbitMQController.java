@@ -5,6 +5,7 @@ import com.myproject.springboot.service.impl.RabbitMQSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 @RestController
 public class RabbitMQController {
@@ -16,8 +17,8 @@ public class RabbitMQController {
     private RabbitMQReceiver receiver;
 
     @GetMapping("/send")
-    public String sendMessage() {
-        sender.sendMessage("Hello, RabbitMQ!");
-        return "Message Sent!";
+    public Mono<String> sendMessage() {
+        return Mono.fromRunnable(() -> sender.sendMessage("Hello, RabbitMQ!"))
+                .thenReturn("Message Sent!");
     }
 }

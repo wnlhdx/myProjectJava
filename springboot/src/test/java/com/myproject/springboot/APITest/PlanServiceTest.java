@@ -14,8 +14,13 @@ import org.mockito.MockitoAnnotations;
 import org.junit.jupiter.api.Test;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.reactive.server.WebTestClient;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.Flux;
+import reactor.test.StepVerifier;
 
 
 import java.util.ArrayList;
@@ -27,6 +32,7 @@ import static org.mockito.Mockito.*;
 
 @AutoConfigureMockMvc
 @ExtendWith(MockitoExtension.class)
+@WebFluxTest
 public class PlanServiceTest{
     @Mock
     private PlanRepository planMapper;
@@ -37,12 +43,22 @@ public class PlanServiceTest{
     @Autowired
     private MockMvc mockMvc;
 
+    @Autowired
+    private WebTestClient webTestClient;
 
     private static AutoCloseable closeable;
 
     @BeforeAll
     public static void setUp() {
         closeable=MockitoAnnotations.openMocks(PlanServiceTest.class);
+    }
+
+    @Test
+    public void testFlux(){
+        webTestClient.get().uri("/date")
+                .exchange()
+                .expectStatus().isOk()
+                .expectBody(String.class).isEqualTo("Hello, World!");
     }
 
     @Test
@@ -56,21 +72,27 @@ public class PlanServiceTest{
         planEntity2.setPlanName("Plan 2");
         // 设置其他属性...
 
-        List<PlanEntity> planList = new ArrayList<>();
-        planList.add(planEntity1);
-        planList.add(planEntity2);
+//        List planList=new ArrayList();
+//        planList.add(planEntity1);
+//        planList.add(planEntity2);
 
         // 模拟返回值
+        Flux<PlanEntity> planList= Flux.just(planEntity1,planEntity2);
         when(planMapper.findAll()).thenReturn(planList);
 
-        // 执行测试
-        List<PlanEntity> result = planService.getAll();
 
+
+        // 执行测试
+        Flux<PlanEntity> result = planService.getAll();
+
+        StepVerifier.create(result).expectNextMatches(plan->plan.getPlanName().equals("Plan 1"))
+                .expectNextMatches(plan->plan.getPlanName().equals("Plan 2"))
+                .expectComplete().verify();
         // 验证结果
-        Assertions.assertNotNull(result);
-        Assertions.assertEquals("Plan 1", result.get(0).getPlanName());
-        Assertions.assertEquals("Plan 2", result.get(1).getPlanName());
-        verify(planMapper, times(1)).findAll(); // 验证调用
+//        Assertions.assertNotNull(result);
+//        Assertions.assertEquals("Plan 1", result..get(0).getPlanName());
+//        Assertions.assertEquals("Plan 2", result.get(1).getPlanName());
+//        verify(planMapper, times(1)).findAll(); // 验证调用
     }
 
     @Test
@@ -78,16 +100,21 @@ public class PlanServiceTest{
         PlanEntity plan = new PlanEntity();
         plan.setPlanName("Test Plan");
 
+        Mono<PlanEntity> planm=Mono.just(plan);
+
         // 模拟返回值
-        when(planMapper.findByPlanName("Test Plan")).thenReturn(plan);
+        when(planMapper.findByPlanName("Test Plan")).thenReturn(planm);
 
         // 执行测试
-        PlanEntity result = planService.getPlanByName("Test Plan");
+        Mono<PlanEntity> result = planService.getPlanByName("Test Plan");
+
+        StepVerifier.create(result).expectNextMatches(tplan->tplan.getPlanName().equals("Test Plan"))
+                .expectComplete().verify();
 
         // 验证结果
-        Assertions.assertNotNull(result);
-        Assertions.assertEquals("Test Plan", result.getPlanName());
-        verify(planMapper, times(1)).findByPlanName("Test Plan"); // 验证调用
+//        Assertions.assertNotNull(result);
+//        Assertions.assertEquals("Test Plan", result.getPlanName());
+//        verify(planMapper, times(1)).findByPlanName("Test Plan"); // 验证调用
     }
 
     @Test

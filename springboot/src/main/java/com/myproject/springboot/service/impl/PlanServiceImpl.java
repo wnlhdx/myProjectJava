@@ -5,51 +5,50 @@ import com.myproject.springboot.mapper.PlanRepository;
 import com.myproject.springboot.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.Flux;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-/**
- * @author lkxl
- */
 @Service
 public class PlanServiceImpl implements PlanService {
-    private final PlanRepository planMapper;
+    private final PlanRepository planRepository;
 
     @Autowired
-    public PlanServiceImpl(PlanRepository planMapper) {
-        this.planMapper = planMapper;
+    public PlanServiceImpl(PlanRepository planRepository) {
+        this.planRepository = planRepository;
     }
 
     @Override
-    public List<PlanEntity> getAll() {
-        return planMapper.findAll();
+    public Flux<PlanEntity> getAll() {
+        return planRepository.findAll();  // 返回 Flux，这样可以异步获取所有计划
     }
 
     @Override
-    public PlanEntity getPlanByName(String planName) {
-        return planMapper.findByPlanName(planName);
+    public Mono<PlanEntity> getPlanByName(String planName) {
+        return planRepository.findByPlanName(planName);  // 返回 Mono，因为只返回一个 PlanEntity
     }
 
     @Override
-    public void addPlan(PlanEntity plan) {
-        planMapper.save(plan);
+    public Mono<Void> addPlan(PlanEntity plan) {
+        return planRepository.save(plan).then();  // 保存后不返回数据，只返回 Void
     }
 
     @Override
-    public void updatePlan(PlanEntity plan) {
-        planMapper.save(plan);
+    public Mono<Void> updatePlan(PlanEntity plan) {
+        return planRepository.save(plan).then();  // 保存后不返回数据，只返回 Void
     }
 
     @Override
-    public void deletePlan(String planName) {
-        planMapper.deleteByPlanName(planName);
+    public Mono<Void> deletePlan(String planName) {
+        return planRepository.deleteByPlanName(planName);  // 删除计划
     }
 
     @Override
-    public PlanEntity getPlansBasedOnTime() {
+    public Mono<PlanEntity> getPlansBasedOnTime() {
         // 获取当前时间和星期几
         LocalTime currentTime = LocalTime.now();
         int dayOfWeek = LocalDate.now().getDayOfWeek().getValue();  // 获取当前星期几
@@ -67,9 +66,9 @@ public class PlanServiceImpl implements PlanService {
 
         // 根据时间段和当前星期几查询计划
         if (isDayTime) {
-            return planMapper.findPlansByTimeAndDayOfWeek(formattedCurrentTime, dayOfWeek);
+            return planRepository.findPlansByTimeAndDayOfWeek(formattedCurrentTime, dayOfWeek);  // 返回Mono<PlanEntity>
         } else {
-            return planMapper.findPlansByTimeAndDayOfWeek(formattedCurrentTime, dayOfWeek);
+            return planRepository.findPlansByTimeAndDayOfWeek(formattedCurrentTime, dayOfWeek);  // 返回Mono<PlanEntity>
         }
     }
 }

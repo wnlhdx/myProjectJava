@@ -5,6 +5,8 @@ import com.myproject.springboot.mapper.DataDownloadRepository;
 import com.myproject.springboot.mapper.FileManageRepository;
 import com.myproject.springboot.service.FileManageService;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -19,17 +21,17 @@ public class FileManageServiceImpl implements FileManageService {
     }
 
     @Override
-    public List<FileManageEntity> findAll() {
-        return List.of();
-    }
-
-    @Override
-    public FileManageEntity findByFileName(String fileName) {
+    public Flux<FileManageEntity> findAll() {
         return null;
     }
 
     @Override
-    public void deleteByFileName(String fileName) {
+    public Mono<FileManageEntity> findByFileName(String fileName) {
+        return null;
+    }
 
+    @Override
+    public Mono<Void> deleteByFileName(String fileName) {
+            return null;
     }
 }

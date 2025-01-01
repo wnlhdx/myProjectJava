@@ -6,6 +6,8 @@ import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFacto
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.RabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -38,4 +40,5 @@ public class RabbitConfig {
         factory.setAcknowledgeMode(AcknowledgeMode.MANUAL);  // 设置手动确认模式
         return factory;
     }
+
 }

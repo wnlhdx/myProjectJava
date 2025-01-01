@@ -9,20 +9,27 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>user</module>
+    <module>core</module>
   </modules>
+
+  <properties>
+    <spring-boot.version>3.4.0</spring-boot.version>
+    <spring-cloud.version>2024.0.0</spring-cloud.version>
+    <resilience4j.version>2.2.0</resilience4j.version>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
+      <!-- Spring Cloud Dependencies BOM -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
-        <version>RELEASE</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-security</artifactId>
-        <version>RELEASE</version>
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>io.jsonwebtoken</groupId>
@@ -30,33 +37,45 @@
         <version>RELEASE</version>
       </dependency>
       <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-oauth2</artifactId>
-        <version>RELEASE</version>
-      </dependency>
-      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        <version>RELEASE</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-autoconfigure</artifactId>
-        <version>RELEASE</version> <!-- Ensure this matches your Spring Boot version -->
+        <version>${spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope><!-- Ensure this matches your Spring Boot version -->
+        <scope>test</scope>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.resilience4j</groupId>
+        <artifactId>resilience4j-spring-boot2</artifactId>
+        <version>${resilience4j.version}</version>
+      </dependency>
+
+
+      <!-- Spring Boot Starter Actuator -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-webflux</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <properties>
-    <maven.compiler.source>22</maven.compiler.source>
-    <maven.compiler.target>22</maven.compiler.target>
-  </properties>
 
   <build>
     <pluginManagement>

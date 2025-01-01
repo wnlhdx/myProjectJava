@@ -3,7 +3,7 @@ spring:
     datasource:
       names: primary,replica
       replica:
-        url: jdbc:sqlite:/data/data/com.termux/files/home/myfolder/Git/Others/database/sqlite/base.db
+        url: jdbc:sqlite:D:/work/code/Others/atabase/sqlite/base.db
         driver-class-name: org.sqlite.JDBC
       primary:
         url: jdbc:postgresql://192.168.1.3:5432/lkxl
@@ -20,21 +20,30 @@ spring:
         loadBalanceAlgorithmType: ROUND_ROBIN  # 负载均衡策略，默认轮询
         rule:
           type: READWRITE_SPLITTING
-  datasource:
-    names: primary,replica
-    replica:
-      url: jdbc:sqlite:/data/data/com.termux/files/home/myfolder/Git/Others/database/sqlite/base.db
-      driver-class-name: org.sqlite.JDBC
-    primary:
-      url: jdbc:postgresql://192.168.1.3:5432/lkxl
-      driver-class-name: org.postgresql.Driver
-      username: wnlhdx
-      password: w1995520
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    database: POSTGRESQL
+
+  r2dbc:
+    datasource:
+      names: primary,replica
+      primary:
+        url: r2dbc:postgresql://192.168.1.3:5432/lkxl
+        username: wnlhdx
+        password: w1995520
+        driver: io.r2dbc.postgresql.PostgresqlDriver
+      replica:
+        url: r2dbc:sqlite:/data/data/com.termux/files/home/myfolder/Git/Others/database/sqlite/base.db
+        driver: io.r2dbc.sqlite.SQLiteDriver
+
+  r2dbc:
+    readwrite-splitting:
+      dataSources:
+        master:
+          dataSourceName: primary
+        slave:
+          dataSourceNames:
+            - replica
+      loadBalanceAlgorithmType: ROUND_ROBIN
+      rule:
+        type: READWRITE_SPLITTING
   data:
     redis:
       host: 192.168.1.3

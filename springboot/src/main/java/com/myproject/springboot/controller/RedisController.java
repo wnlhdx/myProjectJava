@@ -5,6 +5,7 @@ import com.myproject.springboot.service.impl.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 @RestController("/redis")
 public class RedisController {
@@ -16,26 +17,30 @@ public class RedisController {
     private RedisQueueService redisQueueService;
 
     @GetMapping("/setCache")
-    public String setCache() {
-        redisService.setCache("name", "Spring Boot with Redis");
-        return "Cache Set!";
+    public Mono<String> setCache() {
+        // 这里假设 redisService.setCache() 是响应式的，可以返回 Mono<Void> 或其他 Mono 类型
+        return Mono.fromRunnable(() -> redisService.setCache("name", "Spring Boot with Redis"))
+                .thenReturn("Cache Set!");
     }
 
     @GetMapping("/getCache")
-    public String getCache() {
-        Object value = redisService.getCache("name");
-        return "Cache Value: " + value;
+    public Mono<String> getCache() {
+        // 假设 redisService.getCache() 是响应式的，可以返回 Mono<Object>
+        return Mono.fromCallable(() -> redisService.getCache("name"))
+                .map(value -> "Cache Value: " + value);
     }
 
     @GetMapping("/enqueue")
-    public String enqueue() {
-        redisQueueService.enqueue("myQueue", "Message 1");
-        return "Message Enqueued!";
+    public Mono<String> enqueue() {
+        // 假设 redisQueueService.enqueue() 是响应式的，可以返回 Mono<Void>
+        return Mono.fromRunnable(() -> redisQueueService.enqueue("myQueue", "Message 1"))
+                .thenReturn("Message Enqueued!");
     }
 
     @GetMapping("/dequeue")
-    public String dequeue() {
-        String message = redisQueueService.dequeue("myQueue");
-        return "Dequeued Message: " + message;
+    public Mono<String> dequeue() {
+        // 假设 redisQueueService.dequeue() 是响应式的，可以返回 Mono<String>
+        return Mono.fromCallable(() -> redisQueueService.dequeue("myQueue"))
+                .map(message -> "Dequeued Message: " + message);
     }
 }

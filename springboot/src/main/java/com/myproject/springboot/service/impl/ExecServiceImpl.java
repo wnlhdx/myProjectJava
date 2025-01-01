@@ -5,9 +5,9 @@ import com.myproject.springboot.mapper.ExecRepository;
 import com.myproject.springboot.service.ExecService;
 import com.myproject.springboot.tools.OS;
 import jakarta.annotation.PostConstruct;
-import org.elasticsearch.tasks.Task;
 import org.quartz.*;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
@@ -27,16 +27,18 @@ public class ExecServiceImpl implements ExecService {
 
     @PostConstruct
     public void scheduleTasks() throws SchedulerException{
-        List<ExecEntity> execEntityList = execMapper.findAll();
-        for(ExecEntity exec:execEntityList){
-            scheduleJob(exec);
-        }
+        Flux<ExecEntity> execEntityList = execMapper.findAll();
+        execEntityList.doOnNext(this::scheduleJob);
     }
 
-    public void scheduleJob(ExecEntity exec) throws SchedulerException {
-        JobDetail jobDetail=JobBuilder.newJob(getJobClass(exec.getExecDetail())).withIdentity(exec.getExecName()).build();
-        Trigger trigger = TriggerBuilder.newTrigger().withIdentity(exec.getExecName()+"Trigger").withSchedule(CronScheduleBuilder.cronSchedule(exec.getExecFrequency())).build();
-        scheduler.scheduleJob(jobDetail,trigger);
+    public void scheduleJob(ExecEntity exec){
+        try {
+            JobDetail jobDetail = JobBuilder.newJob(getJobClass(exec.getExecDetail())).withIdentity(exec.getExecName()).build();
+            Trigger trigger = TriggerBuilder.newTrigger().withIdentity(exec.getExecName() + "Trigger").withSchedule(CronScheduleBuilder.cronSchedule(exec.getExecFrequency())).build();
+            scheduler.scheduleJob(jobDetail, trigger);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     private  Class<? extends Job> getJobClass(String className){
