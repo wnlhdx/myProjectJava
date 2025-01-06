@@ -1,0 +1,40 @@
+server:
+  port: 8080 # 网关服务的端口
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service-route
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 2
+                key-resolver: "#{@keyResolver}"
+
+        - id: data-processing-route
+          uri: lb://DATA-PROCESSING-SERVICE
+          predicates:
+            - Path=/data/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 2
+                redis-rate-limiter.burstCapacity: 4
+                key-resolver: "#{@keyResolver}"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # 注册中心地址
+  instance:
+    prefer-ip-address: true
+
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0 # 启用 Sleuth 跟踪

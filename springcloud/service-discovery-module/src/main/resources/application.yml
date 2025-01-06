@@ -1,0 +1,20 @@
+server:
+  port: 8761 # Eureka服务注册中心的默认端口
+
+spring:
+  application:
+    name: service-discovery # 注册中心的服务名称
+
+eureka:
+  client:
+    register-with-eureka: false # 注册中心自身不需要注册到其他Eureka实例
+    fetch-registry: false       # 注册中心不需要从其他Eureka实例获取注册表
+  server:
+    wait-time-in-ms-when-sync-empty: 0 # 同步延迟时间设置为0
+    enable-self-preservation: false   # 禁用自我保护模式（开发环境）
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有Actuator端点

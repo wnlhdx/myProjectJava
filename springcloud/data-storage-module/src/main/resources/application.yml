@@ -1,0 +1,27 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: data-storage-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9200
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

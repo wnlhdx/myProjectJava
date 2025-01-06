@@ -1,0 +1,21 @@
+server:
+  port: 8081 # 用户服务的端口
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # 自动创建表结构（开发环境）
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有 Actuator 端点

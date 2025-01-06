@@ -1,76 +1,47 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.myproject</groupId>
-  <artifactId>springcloud</artifactId>
-  <version>1.0.0</version>
+  <artifactId>data-intensive-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name>Data-Intensive Application</name>
 
   <modules>
-    <module>core</module>
+    <module>gateway-module</module>
+    <module>service-discovery-module</module>
+    <module>user-service-module</module>
+    <module>data-processing-module</module>
+    <module>message-queue-module</module>
+    <module>data-storage-module</module>
+    <module>config-management-module</module>
+    <module>monitoring-module</module>
+    <module>batch-processing-module</module>
   </modules>
 
   <properties>
-    <spring-boot.version>3.4.0</spring-boot.version>
-    <spring-cloud.version>2024.0.0</spring-cloud.version>
-    <resilience4j.version>2.2.0</resilience4j.version>
+    <java.version>21</java.version> <!-- 确保使用 Spring Cloud 支持的 Java 版本 -->
+    <spring.boot.version>3.4.0</spring.boot.version>
+    <spring.cloud.version>2024.0.0</spring.cloud.version> <!-- 最新的 RELEASE 版本 -->
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!-- Spring Cloud Dependencies BOM -->
+      <!-- Spring Boot Dependencies -->
       <dependency>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-security</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.jsonwebtoken</groupId>
-        <artifactId>jjwt-api</artifactId>
-        <version>RELEASE</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-        <version>${spring-boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.github.resilience4j</groupId>
-        <artifactId>resilience4j-spring-boot2</artifactId>
-        <version>${resilience4j.version}</version>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring.boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
-
-      <!-- Spring Boot Starter Actuator -->
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-actuator</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-webflux</artifactId>
-        <version>${spring-boot.version}</version>
-      </dependency>
-
+      <!-- Spring Cloud Dependencies -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
+        <version>${spring.cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -80,12 +51,40 @@
   <build>
     <pluginManagement>
       <plugins>
+        <!-- Maven Compiler Plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.11.0</version>
+          <configuration>
+            <source>${java.version}</source>
+            <target>${java.version}</target>
+          </configuration>
+        </plugin>
+
+        <!-- Spring Boot Maven Plugin -->
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring.boot.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
+
+  <dependencies>
+    <!-- Lombok for Cleaner Code -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Test Dependencies -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>

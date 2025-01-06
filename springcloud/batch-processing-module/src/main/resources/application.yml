@@ -1,0 +1,15 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: batch-processing-service
+
+kafka:
+  bootstrap-servers: localhost:9092
+  topic:
+    input: input-topic
+    output: output-topic
+
+flink:
+  parallelism: 4

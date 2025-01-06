@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-management-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/my-org/config-repo
+          username: my-username
+          password: my-password
+          default-label: main
+
+  vault:
+    uri: http://localhost:8200
+    token: my-root-token
+    config:
+      order: 1
+    kv:
+      enabled: true
+
+logging:
+  level:
+    org.springframework: INFO
+    org.springframework.vault: DEBUG

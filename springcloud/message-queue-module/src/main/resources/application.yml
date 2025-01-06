@@ -1,0 +1,21 @@
+server:
+  port: 8083 # 消息队列服务端口
+
+spring:
+  application:
+    name: message-queue-service
+
+  cloud:
+    stream:
+      bindings:
+        outputChannel:
+          destination: message-topic
+          producer:
+            partition-key-expression: payload
+        inputChannel:
+          destination: message-topic
+          group: message-group
+      kafka:
+        binder:
+          brokers: localhost:9092
+          autoCreateTopics: true

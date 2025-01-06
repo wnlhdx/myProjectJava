@@ -1,0 +1,11 @@
+
+模块名称	主要功能	用到的组件   名称
+API 网关模块	路由、认证、限流、日志追踪	Spring Cloud Gateway, Spring Security, Sleuth   gateway-module
+服务注册模块	服务注册与发现	Eureka/Kubernetes, LoadBalancer   service-discovery-module
+用户服务模块	用户管理、身份验证	Spring Data, Spring Security, Actuator  user-service-module
+数据处理模块	业务逻辑、数据一致性处理	Cloud Stream, Resilience4j, R2DBC   data-processing-module
+消息队列模块	异步消息传递	Cloud Stream, Kafka/RabbitMQ   message-queue-module
+数据存储模块	数据库访问与存储	Spring Data, Elasticsearch, Config   data-storage-module
+配置管理模块	集中管理配置	Config, Vault  config-management-module
+监控与调试模块	性能监控、日志分析、分布式追踪	Actuator, Sleuth, Prometheus, Grafana, Zipkin  monitoring-module
+批处理模块	批任务和实时流式处理	Data Flow, Kafka Streams, Flink   batch-processing-module
