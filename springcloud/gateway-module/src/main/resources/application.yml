@@ -34,7 +34,7 @@ eureka:
   instance:
     prefer-ip-address: true
 
-spring:
-  sleuth:
-    sampler:
-      probability: 1.0 # 启用 Sleuth 跟踪
+management:
+  tracing:
+    sampling:
+      probability: 1.0

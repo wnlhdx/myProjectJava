@@ -72,8 +72,6 @@ public class PlanEntity {
     @Column(name = "update_time")
     private String updateTime;
 
-    @Column(name = "book_page")
-    private String bookPage;
 
     public String getPlanName() {
         return planName;
@@ -243,13 +241,6 @@ public class PlanEntity {
         this.updateTime = updateTime;
     }
 
-    public String getBookPage() {
-        return bookPage;
-    }
-
-    public void setBookPage(String bookPage) {
-        this.bookPage = bookPage;
-    }
 
 
     // Getters and Setters

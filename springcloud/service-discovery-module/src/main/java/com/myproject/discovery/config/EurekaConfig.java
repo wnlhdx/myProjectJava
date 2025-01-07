@@ -13,11 +13,7 @@ public class EurekaConfig {
         return () -> {
             // 自定义健康检查逻辑
             boolean isHealthy = true; // 示例逻辑
-            if (isHealthy) {
-                return Health.up().build();
-            } else {
-                return Health.down().withDetail("Error", "Eureka Server Unhealthy").build();
-            }
+            return Health.up().build();
         };
     }
 }
