@@ -3,34 +3,38 @@ package com.myproject.springboot.entity;
 
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.Table;
+//
+//@Entity
 
-@Entity
-@Table(name = "soft")
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+@Table("soft")
 public class SoftUpdateEntity {
     @Id
-    @Column(name = "soft_name")
+    @Column("soft_name")
     private String softName;
 
-    @Column(name = "soft_type")
+    @Column("soft_type")
     private String softType;
 
-    @Column(name = "opreations")
+    @Column("opreations")
     private String opreations;
 
-    @Column(name = "soft_details")
+    @Column("soft_details")
     private String softDetails;
 
-    @Column(name = "soft_version")
+    @Column("soft_version")
     private String softVersion;
 
-    @Column(name = "download_path")
+    @Column("download_path")
     private String downloadPath;
 
-    @Column(name = "update_time")
+    @Column("update_time")
     private String updateTime;
 
     public String getSoftName() {

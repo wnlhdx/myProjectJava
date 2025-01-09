@@ -2,31 +2,35 @@ package com.myproject.springboot.entity;
 
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.Table;
+//
+//@Entity
 
-@Entity
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 @Table(name = "files")
 public class FileManageEntity {
     @Id
-    @Column(name = "file_name")
+    @Column("file_name")
     private String fileName;
 
-    @Column(name = "size")
+    @Column("size")
     private String size;
 
-    @Column(name = "path")
+    @Column("path")
     private String path;
 
-    @Column(name = "system")
+    @Column("system")
     private String system;
 
-    @Column(name = "detail")
+    @Column("detail")
     private String detail;
 
-    @Column(name = "update_time")
+    @Column("update_time")
     private String updateTime;
 
     public FileManageEntity(String fileName, String size, String path, String system, String detail, String updateTime) {

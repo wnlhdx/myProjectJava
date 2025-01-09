@@ -1,75 +1,80 @@
 package com.myproject.springboot.entity;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
+//
+//
+//
+//@Entity
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 
-
-@Entity
-@Table(name = "plans")
+@Table("plans")
 public class PlanEntity {
 
     @Id
-    @Column(name = "plan_name")
+    @Column( "plan_name")
     private String planName;
 
-    @Column(name = "time_start")
+    @Column( "time_start")
     private String timeStart;
 
-    @Column(name = "time_end")
+    @Column("time_end")
     private String timeEnd;
 
-    @Column(name = "plan_details")
+    @Column("plan_details")
     private String planDetails;
 
-    @Column(name = "project_name")
+    @Column("project_name")
     private String projectName;
 
-    @Column(name = "project_details")
+    @Column("project_details")
     private String projectDetails;
 
-    @Column(name = "night_time_start")
+    @Column("night_time_start")
     private String nightTimeStart;
 
-    @Column(name = "night_time_end")
+    @Column("night_time_end")
     private String nightTimeEnd;
 
-    @Column(name = "project_finish_percent")
+    @Column("project_finish_percent")
     private String projectFinishPercent;
 
-    @Column(name = "day_of_week")
+    @Column( "day_of_week")
     private Integer dayOfWeek;
 
-    @Column(name = "book_name")
+    @Column("book_name")
     private String bookName;
 
-    @Column(name = "book_content")
+    @Column("book_content")
     private String bookContent;
 
-    @Column(name = "major_in")
+    @Column("major_in")
     private String majorIn;
 
-    @Column(name = "project_month")
+    @Column("project_month")
     private String projectMonth;
 
-    @Column(name = "project_year")
+    @Column( "project_year")
     private String projectYear;
 
-    @Column(name = "relax_item")
+    @Column("relax_item")
     private String relaxItem;
 
-    @Column(name = "relax_item_foregin")
+    @Column("relax_item_foregin")
     private String relaxItemForeign;
 
-    @Column(name = "type_of_learn")
+    @Column("type_of_learn")
     private String typeOfLearn;
 
-    @Column(name = "type_detail")
+    @Column("type_detail")
     private String typeDetail;
 
-    @Column(name = "standard_learn")
+    @Column("standard_learn")
     private String standardLearn;
 
-    @Column(name = "update_time")
+    @Column("update_time")
     private String updateTime;
 
 

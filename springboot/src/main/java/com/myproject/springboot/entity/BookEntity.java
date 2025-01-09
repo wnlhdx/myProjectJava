@@ -1,24 +1,30 @@
 package com.myproject.springboot.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.Table;
+//
+//@Entity
+//@Table(name = "books")
 
-@Entity
-@Table(name = "books")
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+
+@Table("books")
 public class BookEntity {
     @Id
-    @Column(name = "book_name")
+    @Column("book_name")
     private String bookName;
 
-    @Column(name = "book_src_termux")
+    @Column("book_src_termux")
     private String bookSrcTermux;
 
-    @Column(name = "book_src_windows")
+    @Column("book_src_windows")
     private String bookSrcWindows;
 
-    @Column(name = "book_page")
+    @Column( "book_page")
     private String bookPage;
 
     public String getBookName() {

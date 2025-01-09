@@ -16,7 +16,7 @@ public class ExecServiceImpl implements ExecService {
     private final ExecRepository execMapper;
     private final OS os=new OS();
 
-    private Scheduler scheduler;
+    private final Scheduler scheduler;
 
 
     public ExecServiceImpl(ExecRepository execMapper,Scheduler Scheduler) {
@@ -41,11 +41,17 @@ public class ExecServiceImpl implements ExecService {
         }
     }
 
-    private  Class<? extends Job> getJobClass(String className){
-        try{
-            return (Class<? extends Job>) Class.forName(className);
-        }catch (ClassNotFoundException e){
-            throw new RuntimeException("Job Class not Found:"+className);
+    private Class<? extends Job> getJobClass(String className) {
+        try {
+            Class<?> clazz = Class.forName(className);
+            if (Job.class.isAssignableFrom(clazz)) {
+                return clazz.asSubclass(Job.class);
+            } else {
+                throw new IllegalArgumentException("Class " + className + " is not a subclass of " + Job.class.getName());
+            }
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException("Job class not found: " + className, e);
         }
     }
+
 }

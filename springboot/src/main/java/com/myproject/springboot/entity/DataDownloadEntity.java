@@ -1,34 +1,38 @@
 package com.myproject.springboot.entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.Table;
+//
+//@Entity
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
-@Entity
 @Table(name = "data")
 public class DataDownloadEntity {
     @Id
-    @Column(name = "data_name")
+    @Column("data_name")
     private String dataName;
 
-    @Column(name = "data_type")
+    @Column("data_type")
     private String dataType;
 
-    @Column(name = "website")
+    @Column( "website")
     private String website;
 
-    @Column(name = "whether_ranking")
+    @Column("whether_ranking")
     private String whetherRanking;
 
-    @Column(name = "rangking_top")
+    @Column("rangking_top")
     private String rankingTop;
 
-    @Column(name = "download_path")
+    @Column("download_path")
     private String downloadPath;
 
-    @Column(name = "download_time")
+    @Column("download_time")
     private String downloadTime;
 
     public String getDataName() {

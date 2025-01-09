@@ -1,35 +1,38 @@
 package com.myproject.springboot.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-
-@Entity
-@Table(name = "exec")
+//import jakarta.persistence.Column;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.Table;
+//
+//
+//@Entity
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+@Table("exec")
 public class ExecEntity {
 
     @Id
-    @Column(name = "exec_name")
+    @Column("exec_name")
     private String execName;
 
-    @Column(name = "exec_system")
+    @Column("exec_system")
     private String execSystem;
 
-    @Column(name = "exec_time")
+    @Column("exec_time")
     private String execTime;
 
-    @Column(name = "exec_frequency")
+    @Column("exec_frequency")
     private String execFrequency;
 
-    @Column(name = "exec_detail")
+    @Column("exec_detail")
     private String execDetail;
 
-    @Column(name = "exec_content")
+    @Column("exec_content")
     private String execContent;
 
-    @Column(name = "update_time")
+    @Column("update_time")
     private String updateTime;
 
 
