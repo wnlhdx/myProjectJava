@@ -24,9 +24,9 @@ public interface PlanRepository extends ReactiveCrudRepository<PlanEntity, Long>
     Flux<PlanEntity> findAll();
     Mono<PlanEntity> findByPlanName(String planName);
     // 使用 @Query 注解，根据条件查询计划
-    @Query("SELECT p FROM PlanEntity p WHERE " +
-            "(:currentTime BETWEEN p.timeStart AND p.timeEnd AND p.dayOfWeek = :dayOfWeek) " +
-            "OR (:currentTime BETWEEN p.nightTimeStart AND p.nightTimeEnd AND p.dayOfWeek = :dayOfWeek)")
+@Query("SELECT * FROM plans p WHERE " +
+        "(:currentTime BETWEEN p.time_start AND p.time_end AND p.day_of_week = :dayOfWeek) " +
+        "OR (:currentTime BETWEEN p.night_time_start AND p.night_time_end AND p.day_of_week = :dayOfWeek)")
     Mono<PlanEntity> findPlansByTimeAndDayOfWeek(@Param("currentTime") String currentTime, @Param("dayOfWeek") Integer dayOfWeek);
     Mono<Void> deleteByPlanName(String planName);
 }
