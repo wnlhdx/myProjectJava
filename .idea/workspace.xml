@@ -261,12 +261,12 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/work/code/myProjectJava/springboot/src/test/resources",
+    "last_opened_file_path": "D:/work/code/myProjectJava/javase",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5586207",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "MavenSettings",
     "show.migrate.to.gradle.popup": "false",
     "应用程序.Application.executor": "Run",
     "应用程序.SimpleDBMS.executor": "Run",
@@ -406,7 +406,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.desktop" />
       <item itemvalue="JUnit.PlanServiceTest.testGetPlanByName" />
       <item itemvalue="JUnit.PlanServiceTest.testDeletePlan" />
       <item itemvalue="JUnit.PlanServiceTest.testGetAll" />

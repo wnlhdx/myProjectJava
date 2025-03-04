@@ -27,3 +27,5 @@ quarkus/target
 /springcloud/backend/build
 /springcloud/backend/gradle
 /springcloud/backend/MySQL/build
+.idea/misc.xml
+.idea/workspace.xml
