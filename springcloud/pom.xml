@@ -18,10 +18,15 @@
     <module>config-management-module</module>
     <module>monitoring-module</module>
     <module>batch-processing-module</module>
+    <module>common-infrastructure-module</module>
+    <module>common-infrastructure-module</module>
   </modules>
 
   <properties>
-    <java.version>23</java.version> <!-- 确保使用 Spring Cloud 支持的 Java 版本 -->
+    <java.version>25</java.version> <!-- 确保使用 Spring Cloud 支持的 Java 版本 -->
+    <maven.compiler.source>25</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.boot.version>RELEASE</spring.boot.version>
     <spring.cloud.version>RELEASE</spring.cloud.version> <!-- 最新的 RELEASE 版本 -->
   </properties>
@@ -110,5 +115,21 @@
       <artifactId>elasticsearch-rest-high-level-client</artifactId>
       <version>RELEASE</version> <!-- 或适合你 Elasticsearch 版本的 -->
     </dependency>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>RELEASE</version> <configuration>
+          <source>25</source>
+          <target>25</target>
+        </configuration>
+        </plugin>
+      </plugins>
+    </build>
   </dependencies>
+
+
+
 </project>
