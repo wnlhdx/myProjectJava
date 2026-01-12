@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    reactor.netty: DEBUG
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: test_all
+          uri: http://localhost:8081
+          predicates:
+              - Path=/**

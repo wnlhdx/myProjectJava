@@ -1,0 +1,17 @@
+server:
+  port: 8081 # 避开常用的 8080，方便后续开多实例测试负载均衡
+
+spring:
+  application:
+    name: user-service
+
+  # JDK 25 预览特性配置（虽然编译开了，但在某些 Spring Boot 4 预发布版中，显式指定可以避免反射警告）
+  main:
+    allow-bean-definition-overriding: true
+
+# 日志审计：为了在控制台看清楚 ScopedValue 的绑定过程
+logging:
+  level:
+    root: info
+    com.testcloud: debug # 开启我们自己包名的 debug 级别
+    org.springframework.web: info
